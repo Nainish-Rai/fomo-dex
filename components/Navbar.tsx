@@ -3,7 +3,7 @@ import * as React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 mx-auto flex w-full  bg-black/50 px-0.5 text-base font-medium text-neutral-400 backdrop-blur-lg max-md:max-w-full max-md:flex-wrap">
+    <nav className="sticky top-0 z-50 mx-auto flex  w-full bg-black/50 px-0.5 text-base font-medium text-neutral-400 backdrop-blur-lg ">
       <div className="mx-auto flex  w-full max-w-7xl justify-between gap-5 self-stretch">
         <Image
           src="/brandlogo.svg"
