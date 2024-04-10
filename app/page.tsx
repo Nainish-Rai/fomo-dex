@@ -11,7 +11,7 @@ import Footer from '@/components/Footer'
 
 const HomePage: React.FC = () => {
   return (
-    <div className="mx-auto flex w-full max-w-7xl flex-col items-center self-stretch  overflow-hidden px-8 lg:px-20">
+    <div className="mx-auto flex w-full  flex-col items-center self-stretch overflow-hidden px-8  lg:max-w-7xl  xl:max-w-screen-lg 2xl:max-w-screen-2xl">
       <Hero />
       <Stats />
       <Features />

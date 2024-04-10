@@ -13,14 +13,16 @@ export default function Navbar() {
           className="m-2  aspect-[4.17] w-[160px] max-w-full shrink-0"
         />
         <div className=" hidden items-center gap-5 self-start max-md:max-w-full max-md:flex-wrap md:flex">
-          <div className="my-auto grow self-stretch font-bold text-purple-600">
+          <div className="my-auto grow cursor-pointer self-stretch font-bold text-purple-600">
             Home
           </div>
-          <div className="my-auto flex gap-2 self-stretch whitespace-nowrap">
+          <div className="my-auto flex cursor-pointer items-center gap-2  whitespace-nowrap">
             Community
+            <Image src="/downarr.png" alt="arrow" width={10} height={2} />
           </div>
-          <div className="my-auto flex gap-2 self-stretch whitespace-nowrap">
+          <div className="my-auto flex cursor-pointer items-center gap-2   whitespace-nowrap">
             Settings
+            <Image src="/downarr.png" alt="arrow" width={10} height={2} />
           </div>
           <button className="justify-center self-stretch rounded-[40px] px-5 py-3.5 capitalize leading-[150%] text-white max-md:px-5">
             Connect Wallet

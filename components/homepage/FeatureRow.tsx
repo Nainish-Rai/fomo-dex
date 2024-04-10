@@ -12,17 +12,13 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
   title,
   description,
 }) => (
-  <div className="mb-16 flex w-full items-center justify-evenly gap-5 max-md:flex-col max-md:text-center md:w-1/3">
-    <Image
-      src={imageSrc}
-      alt=""
-      width={80}
-      height={80}
-      className="w-14 shrink-0 fill-white"
-    />
+  <div className="mx-auto my-2 mb-16 mt-8 flex h-14 w-full max-w-md items-center justify-center gap-5 px-2  lg:h-16  lg:w-1/3">
+    <div className="relative h-full w-20 lg:w-24">
+      <Image src={imageSrc} alt="" fill className="h-full w-auto  fill-white" />
+    </div>
     <div>
-      <h3 className="text-xl font-bold">{title}</h3>
-      <p className="mt-3.5 text-lg">{description}</p>
+      <h3 className="text-lg font-bold 2xl:text-xl">{title}</h3>
+      <p className="text-md mt-1">{description}</p>
     </div>
   </div>
 )
@@ -50,7 +46,7 @@ const FeatureRow: React.FC = () => {
   ]
 
   return (
-    <section className="mt-16 flex flex-col justify-between gap-5 px-5 text-white max-md:flex-wrap md:flex-row">
+    <section className="mt-16 flex w-full flex-col items-center justify-between   text-white max-md:flex-wrap lg:flex-row">
       {features.map((feature, index) => (
         <FeatureItem key={index} {...feature} />
       ))}

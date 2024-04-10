@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className=" mt-40 flex flex-col items-center self-stretch bg-neutral-950 bg-opacity-60 px-16 pb-8 pt-20 leading-[150%] max-md:my-10 max-md:max-w-full max-md:px-5">
+    <footer className=" mt-40 flex flex-col items-center self-stretch bg-neutral-950 bg-opacity-60 px-16 pb-8 pt-20 leading-[150%] max-md:my-10 max-md:max-w-full max-md:px-5 md:flex-row">
       <div className="mt-1.5 flex w-full max-w-[1534px] flex-col max-md:max-w-full">
         <div className="flex justify-between gap-5 text-base text-white text-opacity-70 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
           <div className="mt-3.5 flex flex-col self-start text-lg leading-8">

@@ -39,7 +39,7 @@ const partnerItems = [
 
 function Potential() {
   return (
-    <>
+    <div className="flex flex-col items-center justify-center">
       <div className="mt-16 text-center text-5xl font-bold  text-white md:mt-44 lg:text-6xl lg:leading-[100px]">
         <span className="font-extrabold">
           Unlock the Full Potential of Defi with
@@ -55,14 +55,14 @@ function Potential() {
         <SecondaryBtn>Learn More</SecondaryBtn>
       </div>
       {/* Ecosystem */}
-      <div className="mx-auto mt-28 w-[1180px]  max-w-full max-md:mt-10">
-        <div className="flex items-center gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex w-[65%] flex-col max-md:ml-0 max-md:w-full">
-            <div className="px-px max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
-                  <div className="flex grow flex-col whitespace-nowrap text-xl text-white max-md:mt-8">
-                    <h2 className="text-3xl font-extrabold">Ecosystem</h2>
+      <div className="max-w- mx-auto mt-28 w-full   max-md:mt-10">
+        <div className=" flex items-center gap-5 max-md:flex-col max-md:gap-0">
+          <div className=" flex w-[65%] flex-col max-md:ml-0 max-md:w-full">
+            <div className="px-px max-md:mt-10 max-md:max-w-full ">
+              <div className="flex gap-5 max-md:flex-col max-md:gap-0 ">
+                <div className=" flex w-3/12 flex-col pr-1 max-md:ml-0 max-md:w-full">
+                  <div className=" flex grow flex-col whitespace-nowrap text-xl text-white max-md:mt-8">
+                    <h2 className=" text-3xl font-extrabold">Ecosystem</h2>
                     {ecosystemItems.map((item, index) => (
                       <EcosystemItem key={index} title={item} />
                     ))}
@@ -74,13 +74,13 @@ function Potential() {
                     <div className="mt-36 hidden h-px flex-auto self-start border border-solid border-white border-opacity-60 bg-white bg-opacity-60 max-md:mt-10 lg:flex" />
                   </div>
                 </div>
-                <div className="ml-5 flex w-[36%] flex-col max-md:ml-0 max-md:w-full">
+                <div className="-mt-10 ml-5 flex w-[36%] flex-col max-md:ml-0 max-md:w-full">
                   <div className="relative my-auto flex aspect-[1.1] flex-col items-center self-stretch overflow-hidden px-6 pb-3 pt-1 max-md:mt-10 max-md:pl-5">
                     <Image
                       loading="lazy"
                       src="/potential.png"
                       alt=""
-                      className="-mt-4 aspect-[1.02] w-[197px]"
+                      className=" aspect-[1.02] w-24 xl:w-[197px]"
                       width={197}
                       height={197}
                     />
@@ -89,7 +89,7 @@ function Potential() {
               </div>
             </div>
           </div>
-          <div className="ml-5 flex w-[35%] flex-col max-md:ml-0 max-md:w-full">
+          <div className="ml-5 flex w-[50%] flex-col max-md:ml-0 max-md:w-full">
             <div className="flex grow justify-between gap-5 max-md:mt-10">
               <div className="flex gap-0">
                 <div className="my-36 hidden h-px w-[221px] shrink-0 border border-solid border-white border-opacity-60 bg-white bg-opacity-60 lg:flex" />
@@ -107,7 +107,7 @@ function Potential() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
