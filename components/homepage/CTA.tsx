@@ -15,7 +15,7 @@ function CTA({}: Props) {
         Everything you need to accept card payments and grow your business
         anywhere on the planet.
       </div>
-      <PrimaryBtn className="mt-16">Get Started</PrimaryBtn>
+      <PrimaryBtn className="mt-16 px-8 py-3.5">Get Started</PrimaryBtn>
     </div>
   )
 }

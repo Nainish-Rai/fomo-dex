@@ -51,7 +51,7 @@ function Potential() {
         explore infinite use cases with the FOMO ecosystem
       </div>
       <div className="mt-12 flex justify-between gap-5 text-base font-medium capitalize leading-6 max-md:mt-10">
-        <PrimaryBtn>Buy FOMO</PrimaryBtn>
+        <PrimaryBtn className="px-8 py-3.5">Buy FOMO</PrimaryBtn>
         <SecondaryBtn>Learn More</SecondaryBtn>
       </div>
       {/* Ecosystem */}
