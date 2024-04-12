@@ -8,7 +8,6 @@ import Potential from '@/components/homepage/Potential'
 import Figures from '@/components/homepage/Figures'
 import CTA from '@/components/homepage/CTA'
 import Footer from '@/components/Footer'
-import { ParticlesComponent } from '@/components/Particles'
 
 const HomePage: React.FC = () => {
   return (
@@ -20,7 +19,6 @@ const HomePage: React.FC = () => {
         <Potential />
         <Figures />
         <CTA />
-        {/* <ParticlesComponent /> */}
       </div>
       <Footer />
     </>
