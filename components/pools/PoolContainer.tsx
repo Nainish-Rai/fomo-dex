@@ -21,7 +21,7 @@ function PoolContainer({}: Props) {
     },
   ]
   return (
-    <div className="  w-full   rounded-2xl bg-[#141217] px-8 pt-12">
+    <div className="  w-full   rounded-2xl bg-[#141217] px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">

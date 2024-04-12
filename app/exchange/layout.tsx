@@ -6,7 +6,7 @@ export default function ExchangeLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className=" flex h-[93pvh] overflow-hidden ">
+    <div className=" flex h-[93vh] overflow-hidden ">
       <SideBar />
       {children}
     </div>
