@@ -1,4 +1,4 @@
-import SideBar from '@/components/exchange/SideBar'
+import DashboardSideBar from '@/components/dashboard/dashboardSideBar'
 
 export default function ExchangeLayout({
   children,
@@ -7,7 +7,7 @@ export default function ExchangeLayout({
 }>) {
   return (
     <div className=" flex h-screen overflow-hidden">
-      <SideBar />
+      <DashboardSideBar />
       {children}
     </div>
   )

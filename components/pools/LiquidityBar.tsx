@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-type Props = {}
+type Props = {
+  Prices: string[]
+}
 
 interface IconProps {
   src: string
@@ -27,9 +29,9 @@ const Price: React.FC<PriceProps> = ({ price }) => (
   <div className="flex-auto">{price}</div>
 )
 
-const prices = ['$100,000,000', '$100,000,000', '$100,000,000']
+// const prices = ['$100,000,000', '$100,000,000', '$100,000,000']
 
-function LiquidityBar({}: Props) {
+function LiquidityBar({ Prices }: Props) {
   return (
     <section className="mt-6 flex w-full cursor-pointer  items-center justify-between gap-5 rounded-xl bg-[#260F41]/50 bg-opacity-50 px-4 py-3 text-white transition-all duration-200 hover:bg-purple-950 lg:max-w-full lg:flex-wrap lg:px-12 ">
       <div className="flex flex-auto  justify-start">
@@ -64,7 +66,7 @@ function LiquidityBar({}: Props) {
         </div>
       </div>
 
-      {prices.map((price, index) => (
+      {Prices.map((price, index) => (
         <Price key={index} price={price} />
       ))}
       <div className="my-auto">20%</div>

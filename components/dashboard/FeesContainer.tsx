@@ -1,54 +1,41 @@
 import React from 'react'
 
 import Image from 'next/image'
-import LiquidityBar from './LiquidityBar'
+import LiquidityBar from '../pools/LiquidityBar'
+import PrimaryBtn from '../PrimaryBtn'
 
 type Props = {}
 
-function PoolContainer({}: Props) {
+function FeeContainer({}: Props) {
   const infoItems: InfoItemProps[] = [
     {
-      label: 'Liquidity',
+      label: 'User ID',
     },
     {
-      label: 'Volume 24H',
+      label: 'Amount Traded',
     },
     {
-      label: 'Fees 24H',
+      label: 'Commission Recieved',
     },
     {
-      label: 'APR 24H',
+      label: 'Transaction',
+    },
+    {
+      label: 'Timestamp',
     },
   ]
   return (
-    <div className="  w-full   rounded-2xl bg-[#141217] px-4 pt-12 lg:px-8">
+    <div className="   min-h-[600px]   w-full rounded-2xl border border-stone-500/40 bg-[#141217] px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">
-          <h2 className="text-base leading-6 text-white">Liquidity Pools</h2>
+          <h2 className="text-base leading-6 text-white">Fee Earned</h2>
           <p className="mt-3.5 text-sm leading-6 text-neutral-400">
-            Earn yield on trading fees by providing liquidity
+            Claimable Fee: <span className="text-[#00FF00]"> $100,000</span>
           </p>
         </div>
         <div className="mt-3.5 flex justify-between gap-5 text-base">
-          <div className="my-auto flex gap-4 leading-5 text-white">
-            <span className="flex-auto">
-              Time Basis: <span className="text-white">24HR</span>
-            </span>
-            <IconButton src="/downarr.png" alt="Icon" />
-          </div>
-          {/* Seach BTN */}
-          <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-5 py-2.5 text-neutral-400">
-            <Image
-              loading="lazy"
-              src="/search.png"
-              alt="search"
-              className="aspect-square w-5 shrink-0  "
-              width={22}
-              height={22}
-            />
-            <span className="my-auto flex-auto">Search</span>
-          </button>
+          <PrimaryBtn className="px-6 py-3.5">Claim Amount</PrimaryBtn>
         </div>
       </div>
       {/*  */}
@@ -66,13 +53,76 @@ function PoolContainer({}: Props) {
       </section>
       {/*  */}
       <div className="hide-scrollbar flex h-[80%] scroll-my-8 flex-col overflow-scroll overflow-x-hidden">
-        <LiquidityBar Prices={['0.00', '0.00', '0.00']} />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
+        <LiquidityBar
+          Prices={[
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+            '$100,000,000',
+          ]}
+        />
       </div>
     </div>
   )
 }
 
-export default PoolContainer
+export default FeeContainer
 
 interface IconButtonProps {
   src: string
