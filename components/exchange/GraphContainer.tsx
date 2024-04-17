@@ -77,7 +77,7 @@ const tokenData = [
 
 export default function GraphContainer() {
   return (
-    <div className="mt-6 flex w-full max-w-[490px] items-start gap-5 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-12 py-9 md:flex-wrap md:px-8">
+    <div className="border-border bg-cardbg mt-6 flex w-full max-w-lg items-start gap-5 whitespace-nowrap rounded-3xl border border-solid px-12 py-9 md:flex-wrap md:px-8">
       <div className="flex w-full items-center">
         <div className="my-auto flex w-full shrink-0 grow basis-0 flex-col">
           {tokenData.map((token) => (

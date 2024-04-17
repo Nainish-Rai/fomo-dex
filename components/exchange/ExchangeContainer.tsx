@@ -7,7 +7,7 @@ import InfoCard from './InfoCard'
 
 function ExchangeContainer() {
   return (
-    <div className="flex w-full max-w-[490px] flex-col rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-8 py-6">
+    <div className="border-border bg-cardbg flex w-full max-w-lg flex-col rounded-3xl border border-solid p-8">
       {/* From Card */}
       <FromCard />
       {/* FROM CARD */}

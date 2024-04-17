@@ -7,7 +7,7 @@ interface StatsCardProps {
 
 const StatsCard: React.FC<StatsCardProps> = ({ label, value }) => {
   return (
-    <section className="flex flex-col items-start rounded-3xl border border-solid border-stone-500/40 bg-[#141217] pb-7 pl-9 pr-16 pt-7">
+    <section className="border-border bg-cardbg flex h-24 w-64 flex-col items-start justify-center rounded-3xl border border-solid p-4 px-6">
       <h2 className="text-sm font-medium leading-6 text-neutral-400">
         {label}
       </h2>

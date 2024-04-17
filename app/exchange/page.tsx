@@ -6,8 +6,8 @@ type Props = {}
 
 function Exchange({}: Props) {
   return (
-    <div className=" h-full w-full  bg-black">
-      <div className=" flex h-full w-full flex-col items-center justify-center overflow-scroll overflow-x-hidden rounded-tl-3xl bg-[#140822] pb-8 pt-48">
+    <div className="h-screen   w-full  bg-black">
+      <div className=" bg-secondarybg flex h-full w-full  scroll-p-96 flex-col items-center justify-center overflow-scroll overflow-x-hidden rounded-tl-3xl ">
         <ExchangeContainer />
         <GraphContainer />
       </div>

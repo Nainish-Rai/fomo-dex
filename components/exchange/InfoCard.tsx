@@ -15,8 +15,8 @@ function InfoCard({}: Props) {
                 <Image
                   src="/info.png"
                   alt="info"
-                  width={14}
-                  height={14}
+                  width={50}
+                  height={50}
                   className="h-3 w-3"
                 />
               </div>
@@ -30,8 +30,8 @@ function InfoCard({}: Props) {
                 <Image
                   src="/info.png"
                   alt="info"
-                  width={14}
-                  height={14}
+                  width={50}
+                  height={50}
                   className="h-3 w-3"
                 />
               </div>
@@ -45,8 +45,8 @@ function InfoCard({}: Props) {
                 <Image
                   src="/info.png"
                   alt="info"
-                  width={14}
-                  height={14}
+                  width={50}
+                  height={50}
                   className="h-3 w-3"
                 />
               </div>
@@ -59,8 +59,8 @@ function InfoCard({}: Props) {
               <Image
                 src="/downarr.png"
                 alt="info"
-                width={14}
-                height={14}
+                width={50}
+                height={50}
                 className="h-2 w-3"
               />
             </div>

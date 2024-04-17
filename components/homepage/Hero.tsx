@@ -17,7 +17,7 @@ function Hero({}: Props) {
         Light-speed swaps. Next-level liquidity. Friction-less yield.
       </div>
       <div className="mt-12 flex justify-between gap-5 text-base font-medium capitalize leading-6 max-md:mt-10">
-        <PrimaryBtn className="px-8 py-3.5">Launch App</PrimaryBtn>
+        <PrimaryBtn className="">Launch App</PrimaryBtn>
         <SecondaryBtn>Read Docs</SecondaryBtn>
       </div>
     </>

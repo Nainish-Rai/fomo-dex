@@ -8,16 +8,15 @@ function ReferralContainer() {
   return (
     <div className="flex h-fit w-full max-w-[490px] flex-col rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-8 py-6">
       {/* From Card */}
-      <FromCard />
-      {/* FROM CARD */}
-      <div className="ml-4 mt-5 flex gap-3.5 self-start text-base font-semibold leading-4 text-white">
-        <Image src="/exchangelogo.png" alt="Swap" width={28} height={28} />
-        <div className="my-auto flex-auto">1 SOL = 81.77 FOMO</div>
+      <div className="bg-secondarybg">
+        <div className=" flex items-center gap-2 text-base font-medium leading-6 text-white">
+          <Image src="/solana.png" alt="Solana" width={24} height={24} />
+          <div>SOL</div>
+          <div className="flex h-full items-center">
+            <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+          </div>
+        </div>
       </div>
-      {/* TO CARD */}
-      <ToCard />
-      {/* TO CARD */}
-
       <PrimaryBtn className="mt-6 w-full py-0">
         <div className="my-2">Generate Referral </div>
       </PrimaryBtn>

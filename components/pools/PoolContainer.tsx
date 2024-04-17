@@ -21,7 +21,7 @@ function PoolContainer({}: Props) {
     },
   ]
   return (
-    <div className="  w-full   rounded-2xl bg-[#141217] px-4 pt-12 lg:px-8">
+    <div className="  bg-cardbg   border-border w-full overflow-hidden rounded-2xl border px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">
@@ -66,7 +66,30 @@ function PoolContainer({}: Props) {
       </section>
       {/*  */}
       <div className="hide-scrollbar flex h-[80%] scroll-my-8 flex-col overflow-scroll overflow-x-hidden">
-        <LiquidityBar Prices={['0.00', '0.00', '0.00']} />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
       </div>
     </div>
   )
