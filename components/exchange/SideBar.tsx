@@ -11,7 +11,7 @@ function SideBar() {
         </div>
         <div className="mt-2 flex cursor-pointer gap-3.5  rounded-xl p-3 px-6 duration-200 hover:bg-purple-900 hover:text-white">
           <Image
-            src="/liquidityIcon.png"
+            src="/liquidityicon.png"
             alt="Liquidity"
             width={28}
             height={28}
@@ -19,11 +19,11 @@ function SideBar() {
           <div className="my-auto">Liquidity</div>
         </div>
         <div className="mt-2 flex cursor-pointer gap-3.5  rounded-xl p-3 px-6 duration-200 hover:bg-purple-900 hover:text-white">
-          <Image src="/poolsIcon.png" alt="Pools" width={28} height={28} />
+          <Image src="/poolsicon.png" alt="Pools" width={28} height={28} />
           <div className="my-auto">Pools</div>
         </div>
         <div className="mt-2 flex cursor-pointer gap-3.5  rounded-xl p-3 px-6 duration-200 hover:bg-purple-900 hover:text-white">
-          <Image src="/docsIcon.png" alt="Docs" width={28} height={28} />
+          <Image src="/docsicon.png" alt="Docs" width={28} height={28} />
           <div className="my-auto">Docs</div>
         </div>
       </div>

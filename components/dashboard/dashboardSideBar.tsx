@@ -13,7 +13,7 @@ function DashboardSideBar() {
       title: 'History',
       icon: (
         <Image
-          src="/liquidityIcon.png"
+          src="/liquidityicon.png"
           alt="Liquidity"
           width={28}
           height={28}
@@ -22,23 +22,23 @@ function DashboardSideBar() {
     },
     {
       title: 'LP',
-      icon: <Image src="/poolsIcon.png" alt="Pools" width={28} height={28} />,
+      icon: <Image src="/poolsicon.png" alt="Pools" width={28} height={28} />,
     },
   ]
   const SideBarItemInfo2 = [
     {
       title: 'Generate Referral',
-      icon: <Image src="/docsIcon.png" alt="Docs" width={28} height={28} />,
+      icon: <Image src="/docsicon.png" alt="Docs" width={28} height={28} />,
     },
     {
       title: 'Referral Earning',
-      icon: <Image src="/docsIcon.png" alt="Docs" width={28} height={28} />,
+      icon: <Image src="/docsicon.png" alt="Docs" width={28} height={28} />,
     },
   ]
   const SideBarItemInfo3 = [
     {
       title: 'Help & Support',
-      icon: <Image src="/docsIcon.png" alt="Docs" width={28} height={28} />,
+      icon: <Image src="/docsicon.png" alt="Docs" width={28} height={28} />,
     },
   ]
   return (
