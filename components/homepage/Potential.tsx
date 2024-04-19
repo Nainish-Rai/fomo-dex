@@ -90,7 +90,7 @@ function Potential() {
             </div>
           </div>
           <div className="ml-5 flex w-[50%] flex-col max-md:ml-0 max-md:w-full">
-            <div className="flex grow justify-between gap-5 max-md:mt-10">
+            <div className="flex grow  gap-10 max-md:mt-10">
               <div className="flex gap-0">
                 <div className="my-36 hidden h-px w-[221px] shrink-0 border border-solid border-white border-opacity-60 bg-white bg-opacity-60 lg:flex" />
                 <div className="hidden h-[296px] w-px shrink-0 border border-solid border-white border-opacity-60 bg-white bg-opacity-60 lg:flex" />

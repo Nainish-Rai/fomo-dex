@@ -6,3 +6,8 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.boxshadow {
+  box-shadow: 0px 8px 48px 0px rgba(30, 56, 117, 0.893);
+  backdrop-filter: blur(2px);
+}
