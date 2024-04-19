@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button'
 import SelectTokenCard from './SelectTokenCard'
 import Link from 'next/link'
 import Image from 'next/image'
+import PrimaryBtn from '../PrimaryBtn'
 
 export function SelectTokenDisclaimer({
   children,
@@ -27,169 +28,42 @@ export function SelectTokenDisclaimer({
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-semibold text-white">Select a Token</h3>
           </div>
-          <div className=""></div>
-          <div className="mt-4  text-white">
-            <p>Popular Tokens</p>
-            <div className="mt-4 flex w-fit items-center space-x-4 ">
-              <div className="flex gap-2 rounded-3xl border border-border p-2 px-3 ">
-                <Image
-                  src={'/solana.png'}
-                  alt="solana"
-                  width={50}
-                  height={50}
-                  className="h-6 w-6"
-                />
-                <p>SOL</p>
-              </div>
-              <div className="flex gap-2 rounded-3xl border border-border p-2 px-3 ">
-                <Image
-                  src={'/solana.png'}
-                  alt="solana"
-                  width={50}
-                  height={50}
-                  className="h-6 w-6"
-                />
-                <p>SOL</p>
-              </div>
-              <div className="flex gap-2 rounded-3xl border border-border p-2 px-3 ">
-                <Image
-                  src={'/solana.png'}
-                  alt="solana"
-                  width={50}
-                  height={50}
-                  className="h-6 w-6"
-                />
-                <p>SOL</p>
-              </div>
+          <div className="my-2 mt-4 rounded-md bg-[#0A090D] p-4 text-sm text-[#ABC4FFB2]/70">
+            This website-hosted user interface this Interface is an open source
+            frontend software portal to the Raydium protocol, a decentralized
+            and community-driven collection of blockchain- enabled smart
+            contracts and tools the Raydium Protocol. This Interface and the
+            Raydium Protocol are made available by the Raydium Holding
+            Foundation, however all transactions conducted on the protocol are
+            run by related permissionless smart contracts. As the Interface is
+            open-sourced and the Raydium Protocol and its related smart
+            contracts are accessible by any user, entity or third party, there
+            are a number of third party web and mobile user- interfaces that
+            allow for interaction with the Raydium Protocol.
+            <br />
+            <br />
+            THIS INTERFACE AND THE RAYDIUM PROTOCOL ARE PROVIDED AS IS,
+            <br />
+            <br />
+            AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY KIND. The Raydium
+            Holding Foundation does not provide, own, or control the Raydium
+            Protocol or any transactions conducted on the protocol or via
+            related smart contracts. By using or accessing this Interface or the
+            Raydium Protocol and related smart contracts, you agree
+          </div>
+          <div className=" my-5 ml-1 flex gap-4">
+            <input
+              type="checkbox"
+              style={{ accentColor: '#ABC4FF' }}
+              name=""
+              id=""
+              className=" "
+            />
+            <div className="text-sm text-white">
+              I have read, understand and accept these terms.
             </div>
           </div>
-          <div className="mt-4">
-            <div className="flex items-center justify-between px-2 font-medium text-[#A7A7A7]">
-              <p>Token</p>
-              <p>Balance/Address</p>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={'/solana.png'}
-                    alt="solana"
-                    width={50}
-                    height={50}
-                    className="h-6 w-6"
-                  />
-                  <div className="flex flex-col">
-                    <p className="text-base text-white ">SOL</p>
-
-                    <p className="text-sm font-extralight text-white">Solana</p>
-                  </div>
-                </div>
-                <div className="flex items-center  gap-4">
-                  <div className=" border-2 border-border p-1 px-6 text-[#A7A7A7]">
-                    abcswhejej1233444
-                  </div>
-                  <Image
-                    src={'/share.svg'}
-                    alt="copy"
-                    width={20}
-                    height={20}
-                    className="h-6 w-6"
-                  />
-                </div>
-              </div>
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={'/solana.png'}
-                    alt="solana"
-                    width={50}
-                    height={50}
-                    className="h-6 w-6"
-                  />
-                  <div className="flex flex-col">
-                    <p className="text-base text-white ">SOL</p>
-
-                    <p className="text-sm font-extralight text-white">Solana</p>
-                  </div>
-                </div>
-                <div className="flex items-center  gap-4">
-                  <div className=" border-2 border-border p-1 px-6 text-[#A7A7A7]">
-                    abcswhejej1233444
-                  </div>
-                  <Image
-                    src={'/share.svg'}
-                    alt="copy"
-                    width={20}
-                    height={20}
-                    className="h-6 w-6"
-                  />
-                </div>
-              </div>
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={'/solana.png'}
-                    alt="solana"
-                    width={50}
-                    height={50}
-                    className="h-6 w-6"
-                  />
-                  <div className="flex flex-col">
-                    <p className="text-base text-white ">SOL</p>
-
-                    <p className="text-sm font-extralight text-white">Solana</p>
-                  </div>
-                </div>
-                <div className="flex items-center  gap-4">
-                  <div className=" border-2 border-border p-1 px-6 text-[#A7A7A7]">
-                    abcswhejej1233444
-                  </div>
-                  <Image
-                    src={'/share.svg'}
-                    alt="copy"
-                    width={20}
-                    height={20}
-                    className="h-6 w-6"
-                  />
-                </div>
-              </div>
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={'/solana.png'}
-                    alt="solana"
-                    width={50}
-                    height={50}
-                    className="h-6 w-6"
-                  />
-                  <div className="flex flex-col">
-                    <p className="text-base text-white ">SOL</p>
-
-                    <p className="text-sm font-extralight text-white">Solana</p>
-                  </div>
-                </div>
-                <div className="flex items-center  gap-4">
-                  <div className=" border-2 border-border p-1 px-6 text-[#A7A7A7]">
-                    abcswhejej1233444
-                  </div>
-                  <Image
-                    src={'/share.svg'}
-                    alt="copy"
-                    width={20}
-                    height={20}
-                    className="h-6 w-6"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr className=" mt-4 border border-[#ABC4FF80] " />
-          <div className="mt-4 flex justify-center">
-            <Link className=" pb-2 text-white underline" href="#">
-              {' '}
-              View Token List
-            </Link>
-          </div>
+          <PrimaryBtn className=" w-full">Agree and Continue</PrimaryBtn>
         </div>
       </AlertDialogContent>
     </AlertDialog>
