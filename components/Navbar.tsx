@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="mx-auto flex  w-full max-w-screen-2xl justify-between gap-5 self-stretch px-5">
         <Link href="/">
           <Image
-            src="/brandlogo.svg"
+            src="/BrandLogo.svg"
             alt="Logo"
             width={100}
             height={42}
