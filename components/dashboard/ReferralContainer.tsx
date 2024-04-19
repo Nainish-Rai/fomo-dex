@@ -34,7 +34,7 @@ function ReferralContainer() {
           className="w-10"
         />
       </div>
-      <SelectToken />
+      {/* <SelectToken /> */}
       {/* From Card */}
       <div className="flex flex-col items-center rounded-xl bg-secondarybg p-4">
         <div className="text-white">To</div>
