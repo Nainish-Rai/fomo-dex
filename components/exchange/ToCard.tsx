@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import PrimaryBtn from '../PrimaryBtn'
 import GradientDiv from '../GradientDiv'
+import { SelectToken } from './SelectToken'
 export default function ToCard() {
   return (
     <div className="fle2 mt-5 flex-col rounded-xl bg-[#140822] bg-opacity-50 px-8 py-6">
@@ -11,13 +12,15 @@ export default function ToCard() {
         </div>
       </div>
       <div className="mt-6 flex items-start justify-between gap-4 ">
-        <div className=" flex items-center gap-2 text-base font-medium leading-6 text-white">
-          <Image src="/solana.png" alt="Solana" width={24} height={24} />
-          <div>FOMO</div>
-          <div className="flex h-full items-center">
-            <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+        <SelectToken>
+          <div className=" flex cursor-pointer items-center gap-2 text-base font-medium leading-6 text-white">
+            <Image src="/solana.png" alt="Solana" width={24} height={24} />
+            <div>FOMO</div>
+            <div className="flex h-full items-center">
+              <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+            </div>
           </div>
-        </div>
+        </SelectToken>
         <div className="flex items-center gap-3 px-0.5 text-sm font-medium capitalize leading-5 text-white">
           <div className="h-8 w-px shrink-0 self-stretch border-r border-solid border-indigo-300 border-opacity-50" />
           <GradientDiv className="my-auto items-start justify-center self-stretch rounded-[40px] px-1  text-xs">

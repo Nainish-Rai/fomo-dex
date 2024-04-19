@@ -4,6 +4,7 @@ import PrimaryBtn from '../PrimaryBtn'
 import FromCard from '../exchange/FromCard'
 import ToCard from '../exchange/ToCard'
 import { SelectToken } from '../exchange/SelectToken'
+import { SelectTokenDisclaimer } from '../exchange/SelectTokenDisclaimer'
 
 function ReferralContainer() {
   return (
@@ -34,6 +35,9 @@ function ReferralContainer() {
           className="w-10"
         />
       </div>
+      <SelectTokenDisclaimer>
+        <div>s</div>
+      </SelectTokenDisclaimer>
       {/* <SelectToken /> */}
       {/* From Card */}
       <div className="flex flex-col items-center rounded-xl bg-secondarybg p-4">
