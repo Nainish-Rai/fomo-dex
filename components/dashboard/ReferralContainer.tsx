@@ -5,6 +5,7 @@ import FromCard from '../exchange/FromCard'
 import ToCard from '../exchange/ToCard'
 import { SelectToken } from '../exchange/SelectToken'
 import { SelectTokenDisclaimer } from '../exchange/SelectTokenDisclaimer'
+import { FaAngleDown } from 'react-icons/fa6'
 
 function ReferralContainer() {
   return (
@@ -22,7 +23,7 @@ function ReferralContainer() {
           />
           <div className=" text-lg">SOL</div>
           <div className="flex h-full items-center">
-            <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+            <FaAngleDown />
           </div>
         </div>
       </div>
@@ -52,7 +53,7 @@ function ReferralContainer() {
           />
           <div className=" text-lg">SOL</div>
           <div className="flex h-full items-center">
-            <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+            <FaAngleDown />
           </div>
         </div>
       </div>

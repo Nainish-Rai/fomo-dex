@@ -3,7 +3,10 @@ import React from 'react'
 import Image from 'next/image'
 import LiquidityBar from '../pools/LiquidityBar'
 import PrimaryBtn from '../PrimaryBtn'
+import { FaAngleDown } from 'react-icons/fa6'
 
+import { TbArrowsUpDown } from 'react-icons/tb'
+import { FiFilter } from 'react-icons/fi'
 type Props = {}
 
 function FeeContainer({}: Props) {
@@ -25,7 +28,7 @@ function FeeContainer({}: Props) {
     },
   ]
   return (
-    <div className="   bg-cardbg   border-border h-full min-h-[600px] w-full overflow-hidden rounded-2xl border px-4 pt-12 lg:px-8">
+    <div className="   h-full   min-h-[600px] w-full overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">
@@ -39,13 +42,10 @@ function FeeContainer({}: Props) {
         </div>
       </div>
       {/*  */}
-      <section className="bg-cardbg mt-6 flex w-full items-start justify-between gap-5 rounded-xl bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
+      <section className="mt-6 flex w-full items-start justify-between gap-5 rounded-xl bg-cardbg bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
         <div className="mx-12 flex items-center gap-3.5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
           <div className="my-auto">Pool</div>
-          <CurrencyImage
-            src="/updownarr.png"
-            className="stroke-opacity-50 aspect-[0.7] h-4 w-4 shrink-0"
-          />
+          <FaAngleDown />
         </div>
         {infoItems.map((item, index) => (
           <InfoItem key={index} label={item.label} />
@@ -161,13 +161,7 @@ const InfoItem: React.FC<InfoItemProps> = ({ label }) => (
       {label}
     </div>
 
-    <CurrencyImage
-      src="/updownarr.png"
-      className={` aspect-[0.7] h-4 w-5 shrink-0`}
-    />
-    <CurrencyImage
-      src="/filter.png"
-      className={` aspect-[0.7] h-4 w-4 shrink-0`}
-    />
+    <TbArrowsUpDown style={{ color: 'white' }} />
+    <FiFilter style={{ color: 'white' }} />
   </div>
 )

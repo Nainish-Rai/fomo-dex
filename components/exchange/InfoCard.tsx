@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import { IoMdInformationCircleOutline } from 'react-icons/io'
+import { FaAngleDown } from 'react-icons/fa6'
 
 type Props = {}
 
@@ -11,14 +13,7 @@ function InfoCard({}: Props) {
           <div className="flex w-full grow flex-col text-sm leading-4 text-white">
             <div className="flex w-full justify-between">
               <div className="flex items-center gap-2">
-                Swapping Through{' '}
-                <Image
-                  src="/info.png"
-                  alt="info"
-                  width={50}
-                  height={50}
-                  className="h-3 w-3"
-                />
+                Swapping Through <IoMdInformationCircleOutline />
               </div>
               <div className="text-base font-semibold leading-4 text-white">
                 Raydiuum Pool
@@ -26,14 +21,7 @@ function InfoCard({}: Props) {
             </div>
             <div className="mt-3 flex w-full items-center justify-between">
               <div className=" flex items-center gap-2">
-                Minimum Received{' '}
-                <Image
-                  src="/info.png"
-                  alt="info"
-                  width={50}
-                  height={50}
-                  className="h-3 w-3"
-                />
+                Minimum Received <IoMdInformationCircleOutline />
               </div>
               <div className="text-base font-semibold leading-4 text-white">
                 100 RAY
@@ -41,14 +29,7 @@ function InfoCard({}: Props) {
             </div>
             <div className="mt-3 flex w-full items-center justify-between">
               <div className=" flex items-center gap-2">
-                Price Impact{' '}
-                <Image
-                  src="/info.png"
-                  alt="info"
-                  width={50}
-                  height={50}
-                  className="h-3 w-3"
-                />
+                Price Impact <IoMdInformationCircleOutline />
               </div>
               <div className="text-base font-semibold leading-4 text-white">
                 {'<'} 1%
@@ -56,13 +37,7 @@ function InfoCard({}: Props) {
             </div>
             <div className="mt-3 flex items-center gap-2">
               More Information
-              <Image
-                src="/downarr.png"
-                alt="info"
-                width={50}
-                height={50}
-                className="h-2 w-3"
-              />
+              <FaAngleDown />
             </div>
           </div>
         </div>

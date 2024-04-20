@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { SelectToken } from './SelectToken'
 import GradientDiv from '../GradientDiv'
+import { FaAngleDown } from 'react-icons/fa6'
 export default function FromCard() {
   return (
     <div className="flex  flex-col rounded-xl bg-[#140822] bg-opacity-50 px-8 py-6">
@@ -16,7 +17,7 @@ export default function FromCard() {
             <Image src="/solana.png" alt="Solana" width={24} height={24} />
             <div>SOL</div>
             <div className="flex h-full items-center">
-              <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+              <FaAngleDown />
             </div>
           </div>
         </SelectToken>
