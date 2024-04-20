@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import PrimaryBtn from '../PrimaryBtn'
+import { IoMdInformationCircleOutline } from 'react-icons/io'
+import { FaAngleDown } from 'react-icons/fa6'
 type Props = {
   Prices: string[]
 }
@@ -41,17 +43,17 @@ function LiquidityBar({ Prices }: Props) {
     >
       {active ? (
         <div className="flex w-full items-center">
-          <div className="text-textsecondary flex flex-auto flex-col gap-2 font-medium">
+          <div className="flex flex-auto flex-col gap-2 font-medium text-textsecondary">
             Your Liquidity
             <span className="font-semibold text-white">$100,000,000 </span>
             0LP
           </div>
-          <div className="text-textsecondary flex flex-auto flex-col gap-2 font-medium">
+          <div className="flex flex-auto flex-col gap-2 font-medium text-textsecondary">
             Assets Pooled
             <span className="font-semibold text-white">0.8 XYZ </span>
             <span className="font-semibold text-white">0 LP </span>
           </div>
-          <div className="text-textsecondary flex flex-auto flex-col gap-2 font-medium">
+          <div className="flex flex-auto flex-col gap-2 font-medium text-textsecondary">
             Your Share
             <span className="font-semibold text-white">0%</span>
             {/* <span className="font-semibold text-white">0%</span> */}
@@ -96,11 +98,7 @@ function LiquidityBar({ Prices }: Props) {
                 </div>
                 <div className="mt-3 flex items-center gap-1.5 whitespace-nowrap text-base font-medium leading-6 text-white">
                   <div className="grow">MENS-SOL</div>
-                  <Icon
-                    src="/info.png"
-                    alt="Icon 3"
-                    className="aspect-square h-3 w-3"
-                  />
+                  <IoMdInformationCircleOutline />
                 </div>
               </div>
             </div>
@@ -110,11 +108,7 @@ function LiquidityBar({ Prices }: Props) {
             <Price key={index} price={price} />
           ))}
           <div className="my-auto">20%</div>
-          <Icon
-            src="/downarr.png"
-            alt="Icon 4"
-            className="my-auto aspect-[1.75] w-3.5 border border-solid border-white stroke-white stroke-[1px]"
-          />
+          <FaAngleDown />
         </>
       )}
     </section>

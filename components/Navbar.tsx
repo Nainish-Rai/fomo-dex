@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import * as React from 'react'
 import Link from 'next/link'
+import PrimaryBtn from './PrimaryBtn'
+import { FaAngleDown } from 'react-icons/fa6'
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 mx-auto flex  w-full bg-black/50 px-0.5 text-base font-medium text-neutral-400 backdrop-blur-lg ">
+    <nav className="sticky top-0 z-50 mx-auto flex  w-full bg-black/50 px-0.5 py-4 text-base font-medium text-neutral-400 backdrop-blur-lg ">
       <div className="mx-auto flex  w-full max-w-screen-2xl justify-between gap-5 self-stretch px-5">
         <Link href="/">
           <Image
@@ -21,15 +23,15 @@ export default function Navbar() {
           </div>
           <div className="my-auto flex cursor-pointer items-center gap-2  whitespace-nowrap">
             Community
-            <Image src="/downarr.png" alt="arrow" width={10} height={2} />
+            <FaAngleDown />
           </div>
           <div className="my-auto flex cursor-pointer items-center gap-2   whitespace-nowrap">
             Settings
-            <Image src="/downarr.png" alt="arrow" width={10} height={2} />
+            <FaAngleDown />
           </div>
-          <button className="justify-center self-stretch rounded-[40px] px-5 py-3.5 capitalize leading-[150%] text-white max-md:px-5">
+          <PrimaryBtn className="justify-center self-stretch rounded-[40px]  capitalize leading-[150%] text-white ">
             Connect Wallet
-          </button>
+          </PrimaryBtn>
         </div>
       </div>
     </nav>

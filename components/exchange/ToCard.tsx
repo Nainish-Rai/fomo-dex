@@ -2,6 +2,7 @@ import Image from 'next/image'
 import PrimaryBtn from '../PrimaryBtn'
 import GradientDiv from '../GradientDiv'
 import { SelectToken } from './SelectToken'
+import { FaAngleDown } from 'react-icons/fa6'
 export default function ToCard() {
   return (
     <div className="fle2 mt-5 flex-col rounded-xl bg-[#140822] bg-opacity-50 px-8 py-6">
@@ -17,7 +18,7 @@ export default function ToCard() {
             <Image src="/solana.png" alt="Solana" width={24} height={24} />
             <div>FOMO</div>
             <div className="flex h-full items-center">
-              <Image src="/downarr.png" alt="Solana" width={12} height={12} />
+              <FaAngleDown />
             </div>
           </div>
         </SelectToken>

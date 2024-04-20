@@ -2,6 +2,8 @@ import React from 'react'
 
 import Image from 'next/image'
 import LiquidityBar from './LiquidityBar'
+import { FaAngleDown } from 'react-icons/fa6'
+import { TbArrowsUpDown } from 'react-icons/tb'
 
 type Props = {}
 
@@ -21,7 +23,7 @@ function PoolContainer({}: Props) {
     },
   ]
   return (
-    <div className="  bg-cardbg   border-border w-full overflow-hidden rounded-2xl border px-4 pt-12 lg:px-8">
+    <div className="  w-full   overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">
@@ -35,7 +37,7 @@ function PoolContainer({}: Props) {
             <span className="flex-auto">
               Time Basis: <span className="text-white">24HR</span>
             </span>
-            <IconButton src="/downarr.png" alt="Icon" />
+            <FaAngleDown />
           </div>
           {/* Seach BTN */}
           <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-5 py-2.5 text-neutral-400">
@@ -55,10 +57,7 @@ function PoolContainer({}: Props) {
       <section className="mt-6 flex w-full items-start justify-between gap-5 rounded-xl bg-zinc-800 bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
         <div className="mx-12 flex items-center gap-3.5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
           <div className="my-auto">Pool</div>
-          <CurrencyImage
-            src="/updownarr.png"
-            className="stroke-opacity-50 aspect-[0.7] h-4 w-4 shrink-0"
-          />
+          <TbArrowsUpDown />
         </div>
         {infoItems.map((item, index) => (
           <InfoItem key={index} label={item.label} />
@@ -134,10 +133,7 @@ const InfoItem: React.FC<InfoItemProps> = ({ label }) => (
       {label}
     </div>
 
-    <CurrencyImage
-      src="/updownarr.png"
-      className={` aspect-[0.7] h-4 w-5 shrink-0`}
-    />
+    <TbArrowsUpDown />
     <CurrencyImage
       src="/filter.png"
       className={` aspect-[0.7] h-4 w-4 shrink-0`}
