@@ -23,6 +23,7 @@ const config = {
         cardbg: '#141217',
         secondarybg: '#140822',
         textsecondary: '#7A7A7A',
+        accent: '#BFF400',
       },
       keyframes: {
         'accordion-down': {

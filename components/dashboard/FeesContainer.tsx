@@ -34,7 +34,7 @@ function FeeContainer({}: Props) {
         <div className="flex flex-col">
           <h2 className="text-base leading-6 text-white">Fee Earned</h2>
           <p className="mt-3.5 text-sm leading-6 text-neutral-400">
-            Claimable Fee: <span className="text-[#BFF400]"> $100,000</span>
+            Claimable Fee: <span className="text-accent"> $100,000</span>
           </p>
         </div>
         <div className="mt-3.5 flex justify-between gap-5 text-base">
