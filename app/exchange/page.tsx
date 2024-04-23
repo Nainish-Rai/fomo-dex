@@ -6,10 +6,12 @@ type Props = {}
 
 function Exchange({}: Props) {
   return (
-    <div className="h-screen   w-full  bg-black">
-      <div className=" bg-secondarybg flex h-full w-full  scroll-p-96 flex-col items-center justify-center overflow-scroll overflow-x-hidden rounded-tl-3xl ">
-        <ExchangeContainer />
-        <GraphContainer />
+    <div className="w-full  bg-black">
+      <div className=" hide-scrollbar flex h-full w-full   flex-col items-center justify-center overflow-scroll overflow-x-hidden rounded-tl-3xl bg-secondarybg py-32 ">
+        <div>
+          <ExchangeContainer />
+          <GraphContainer />
+        </div>
       </div>
     </div>
   )

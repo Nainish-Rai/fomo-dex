@@ -6,8 +6,8 @@ import { FaAngleDown } from 'react-icons/fa6'
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 mx-auto flex  w-full bg-black/50 px-0.5 py-4 text-base font-medium text-neutral-400 backdrop-blur-lg ">
-      <div className="mx-auto flex  w-full max-w-screen-2xl justify-between gap-5 self-stretch px-5">
+    <nav className=" fixed  top-0 z-50 mx-auto flex  w-full bg-black/50 px-8 py-4  pt-8 text-base font-medium text-neutral-400 backdrop-blur-lg   ">
+      <div className="mx-auto flex  w-full max-w-screen-2xl items-center justify-between gap-5 self-stretch px-5">
         <Link href="/">
           <Image
             src="/brandlogo.svg"
@@ -29,7 +29,7 @@ export default function Navbar() {
             Settings
             <FaAngleDown />
           </div>
-          <PrimaryBtn className="justify-center self-stretch rounded-[40px]  capitalize leading-[150%] text-white ">
+          <PrimaryBtn className="ml-14   justify-center self-stretch rounded-[40px]  capitalize leading-[150%] text-white ">
             Connect Wallet
           </PrimaryBtn>
         </div>

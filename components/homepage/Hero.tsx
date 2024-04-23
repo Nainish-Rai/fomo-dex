@@ -11,7 +11,7 @@ function Hero({}: Props) {
         <span className="font-extrabold">An Avenue for </span>
         <br />
         <span className="font-extrabold">Evolution of </span>
-        <span className="font-extrabold text-lime-400">Defi</span>
+        <span className="text-accent font-extrabold">Defi</span>
       </div>{' '}
       <div className="mt-14 text-center text-2xl leading-8 text-white max-md:mt-10 max-md:max-w-full">
         Light-speed swaps. Next-level liquidity. Friction-less yield.
