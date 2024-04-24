@@ -6,9 +6,9 @@ import { FaAngleDown } from 'react-icons/fa6'
 export default function ToCard() {
   return (
     <div className="fle2 mt-5 flex-col rounded-xl bg-[#140822] bg-opacity-50 px-8 py-6">
-      <div className="flex gap-5 text-sm leading-4">
+      <div className="flex w-full justify-between gap-5 text-sm leading-4">
         <div className="text-white">TO</div>
-        <div className="flex-auto font-medium text-neutral-400">
+        <div className="font-medium text-neutral-400">
           Balance: $100,000,000
         </div>
       </div>
@@ -25,10 +25,10 @@ export default function ToCard() {
         <div className="flex items-center gap-3 px-0.5 text-sm font-medium capitalize leading-5 text-white">
           <div className="h-8 w-px shrink-0 self-stretch border-r border-solid border-indigo-300 border-opacity-50" />
           <GradientDiv className="my-auto items-start justify-center self-stretch rounded-[40px] px-1  text-xs">
-            <div className="m-2">Max</div>
+            <div className="m-1 mx-2">Max</div>
           </GradientDiv>
           <GradientDiv className=" my-auto justify-center self-stretch rounded-[40px] px-1  text-xs">
-            <div className="m-2"> Half</div>
+            <div className="m-1 mx-2"> Half</div>
           </GradientDiv>
         </div>
         <div className=" flex flex-col">

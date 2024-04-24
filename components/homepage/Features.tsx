@@ -12,7 +12,7 @@ function Features({}: Props) {
       <div className="mt-44 text-center text-3xl font-extrabold leading-[100px] text-white max-md:mt-10  max-md:max-w-full max-md:leading-[74px] md:text-4xl lg:text-4xl xl:text-6xl ">
         Features of <span className="text-accent">FOMO</span>
       </div>
-      <div className="mt-16 leading-7 text-white max-md:mt-10 max-md:max-w-full md:text-center lg:text-lg 2xl:text-xl">
+      <div className="mt-4 text-center text-xs leading-7 text-white  max-md:max-w-full md:text-center lg:mt-16 lg:text-lg 2xl:text-xl">
         Experience the power of community ownership, global governance, and
         explore infinite use cases with the FOMO ecosystem
       </div>
