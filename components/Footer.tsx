@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-14 h-px shrink-0 border border-solid border-zinc-700 bg-zinc-700 max-md:mt-10 max-md:max-w-full" />
         <div className="mt-9 flex items-center justify-between gap-5 text-center text-sm  text-white text-opacity-60 max-md:flex-wrap">
-          <div className="flex items-center gap-3.5 self-start whitespace-nowrap">
+          <div className="flex  flex-row flex-wrap items-center gap-3.5 self-start whitespace-nowrap">
             <div className=" flex items-center gap-2">
               Copyright <span className="text-xl"> &copy;</span>
             </div>

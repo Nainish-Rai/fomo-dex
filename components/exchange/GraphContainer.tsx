@@ -26,7 +26,7 @@ const TokenCard: React.FC<TokenCardProps> = ({
     <div className="flex flex-col self-start">
       <div className="text-sm font-medium leading-4 text-neutral-400">24H%</div>
       <div
-        className={`mt-4 text-base font-semibold leading-4 ${
+        className={`mt-4 text-right text-sm font-semibold leading-4 ${
           isPositiveChange ? 'text-green-300' : 'text-rose-500'
         }`}
       >
@@ -77,7 +77,7 @@ const tokenData = [
 
 export default function GraphContainer() {
   return (
-    <div className="border-border bg-cardbg mt-6 flex w-full max-w-lg items-start gap-5 whitespace-nowrap rounded-3xl border border-solid px-12 py-9 md:flex-wrap md:px-8">
+    <div className="mt-6 flex w-full max-w-lg items-start gap-5 whitespace-nowrap rounded-3xl border border-solid border-border bg-cardbg px-12 py-9 md:flex-wrap md:px-8">
       <div className="flex w-full items-center">
         <div className="my-auto flex w-full shrink-0 grow basis-0 flex-col">
           {tokenData.map((token) => (
