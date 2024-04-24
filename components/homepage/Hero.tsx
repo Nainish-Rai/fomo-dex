@@ -7,7 +7,7 @@ type Props = {}
 function Hero({}: Props) {
   return (
     <>
-      <div className="mt-32 text-center text-4xl font-bold text-white  md:mt-44 lg:mt-16 lg:text-7xl lg:leading-[100px]">
+      <div className="mt-32 text-center text-4xl font-bold text-white  md:mt-44  lg:text-7xl lg:leading-[100px]">
         <span className="font-extrabold">An Avenue for </span>
         <br />
         <span className="font-extrabold">Evolution of </span>
