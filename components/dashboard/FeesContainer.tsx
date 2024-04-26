@@ -1,12 +1,13 @@
 import React from 'react'
 
 import Image from 'next/image'
-import LiquidityBar from '../pools/LiquidityBar'
+import FeeBar from './Feebar'
 import PrimaryBtn from '../PrimaryBtn'
 import { FaAngleDown } from 'react-icons/fa6'
 
 import { TbArrowsUpDown } from 'react-icons/tb'
 import { FiFilter } from 'react-icons/fi'
+
 type Props = {}
 
 function FeeContainer({}: Props) {
@@ -28,7 +29,7 @@ function FeeContainer({}: Props) {
     },
   ]
   return (
-    <div className="   h-full   min-h-[600px] w-full overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
+    <div className=" mb-16  h-full   min-h-[600px] w-full overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">
@@ -42,8 +43,8 @@ function FeeContainer({}: Props) {
         </div>
       </div>
       {/*  */}
-      <section className="mt-6 flex w-full items-start justify-between gap-5 rounded-xl bg-cardbg bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
-        <div className="mx-12 flex items-center gap-3.5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
+      <section className="mt-6 flex w-full items-center justify-between  rounded-xl bg-[#23242F]/50 bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
+        <div className="flex w-1/6 items-center justify-center gap-3.5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
           <div className="my-auto">Pool</div>
           <FaAngleDown />
         </div>
@@ -53,69 +54,35 @@ function FeeContainer({}: Props) {
       </section>
       {/*  */}
       <div className="hide-scrollbar flex h-full scroll-my-8  flex-col overflow-scroll overflow-x-hidden lg:h-[48rem]">
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
-        <LiquidityBar
-          Prices={[
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-            '$100,000,000',
-          ]}
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <FeeBar
+          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
         />
       </div>
     </div>
@@ -156,12 +123,13 @@ type InfoItemProps = {
 }
 
 const InfoItem: React.FC<InfoItemProps> = ({ label }) => (
-  <div className="flex items-center gap-2">
-    <div className="my-auto grow text-sm font-medium leading-6 text-neutral-400">
+  <div className="flex w-1/6 items-center justify-center gap-2">
+    <div className="my-auto  text-sm font-medium leading-6 text-neutral-400">
       {label}
     </div>
-
-    <TbArrowsUpDown style={{ color: 'white' }} />
-    <FiFilter style={{ color: 'white' }} />
+    <div className="flex items-center">
+      <TbArrowsUpDown style={{ color: 'white' }} />
+      <FiFilter style={{ color: 'white' }} />
+    </div>
   </div>
 )

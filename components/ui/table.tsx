@@ -6,10 +6,13 @@ const Table = React.forwardRef<
   HTMLTableElement,
   React.HTMLAttributes<HTMLTableElement>
 >(({ className, ...props }, ref) => (
-  <div className="relative w-full overflow-auto">
+  <div className="relative w-full overflow-auto ">
     <table
       ref={ref}
-      className={cn('w-full caption-bottom text-sm', className)}
+      className={cn(
+        'w-full caption-bottom border-collapse border-spacing-0 text-sm',
+        className
+      )}
       {...props}
     />
   </div>
@@ -20,7 +23,7 @@ const TableHeader = React.forwardRef<
   HTMLTableSectionElement,
   React.HTMLAttributes<HTMLTableSectionElement>
 >(({ className, ...props }, ref) => (
-  <thead ref={ref} className={cn('[&_tr]:border-b', className)} {...props} />
+  <thead ref={ref} className={cn('p-8', className)} {...props} />
 ))
 TableHeader.displayName = 'TableHeader'
 
@@ -30,7 +33,10 @@ const TableBody = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <tbody
     ref={ref}
-    className={cn('[&_tr:last-child]:border-0', className)}
+    className={cn(
+      'rounded-2xl border-t-[24px] border-cardbg [&_tr:last-child]:border-0',
+      className
+    )}
     {...props}
   />
 ))
@@ -58,7 +64,7 @@ const TableRow = React.forwardRef<
   <tr
     ref={ref}
     className={cn(
-      'rounded-3xl border-b  transition-colors data-[state=selected]:bg-slate-100 dark:data-[state=selected]:bg-slate-800',
+      ' section-step my-2  w-full border-separate  border-spacing-8 cursor-pointer rounded-2xl border-t-[24px] border-cardbg bg-[#260F41]/50 bg-opacity-50  text-white  transition-all duration-200 hover:bg-purple-950 ',
       className
     )}
     {...props}

@@ -11,7 +11,7 @@ export default function FromCard() {
           Balance: $100,000,000
         </div>
       </div>
-      <div className="mt-6 flex items-start justify-between gap-4 ">
+      <div className="mt-4 flex items-start justify-between gap-4 ">
         <SelectToken>
           <div className=" flex cursor-pointer items-center gap-2 text-base font-medium leading-6 text-white">
             <Image src="/solana.png" alt="Solana" width={24} height={24} />
@@ -21,12 +21,12 @@ export default function FromCard() {
             </div>
           </div>
         </SelectToken>
-        <div className="flex items-center gap-3 px-0.5 text-sm font-medium capitalize leading-5 text-white">
+        <div className="flex items-start gap-3 px-0.5 text-sm font-medium capitalize leading-5 text-white">
           <div className="h-8 w-px shrink-0 self-stretch border-r border-solid border-indigo-300 border-opacity-50" />
-          <GradientDiv className="my-auto items-start justify-center self-stretch rounded-[40px] px-1  py-0 text-xs">
+          <GradientDiv className=" items-start justify-center  rounded-[40px] px-1  py-0 text-xs">
             <div className="m-1 mx-2">Max</div>
           </GradientDiv>
-          <GradientDiv className=" my-auto justify-center self-stretch rounded-[40px]  px-1 py-0 text-xs">
+          <GradientDiv className="  justify-center  rounded-[40px]  px-1 py-0 text-xs">
             <div className="m-1 mx-2"> Half</div>
           </GradientDiv>
         </div>
