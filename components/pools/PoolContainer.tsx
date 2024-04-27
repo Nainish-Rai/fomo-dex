@@ -2,7 +2,8 @@ import React from 'react'
 
 import Image from 'next/image'
 import LiquidityBar from './LiquidityBar'
-import { FaAngleDown } from 'react-icons/fa6'
+import { FaAngleDown, FaFilter } from 'react-icons/fa6'
+import { FiFilter } from 'react-icons/fi'
 import { TbArrowsUpDown } from 'react-icons/tb'
 
 type Props = {}
@@ -23,7 +24,7 @@ function PoolContainer({}: Props) {
     },
   ]
   return (
-    <div className="  w-full   overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
+    <div className="  mb-16 max-h-[900px] w-full   overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
       {' '}
       <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
         <div className="flex flex-col">
@@ -40,7 +41,7 @@ function PoolContainer({}: Props) {
             <FaAngleDown />
           </div>
           {/* Seach BTN */}
-          <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-5 py-2.5 text-neutral-400">
+          <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-4 py-2.5 pr-14 text-neutral-400">
             <Image
               loading="lazy"
               src="/search.png"
@@ -54,9 +55,9 @@ function PoolContainer({}: Props) {
         </div>
       </div>
       {/*  */}
-      <section className="mt-6 flex w-full items-start justify-between gap-5 rounded-xl bg-zinc-800 bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
-        <div className="mx-12 flex items-center gap-3.5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
-          <div className="my-auto">Pool</div>
+      <section className="mt-6 flex w-full items-center justify-between  rounded-xl bg-zinc-800 bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
+        <div className=" flex w-1/5 items-center justify-center gap-5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
+          <div className="my-auto ">Pool</div>
           <TbArrowsUpDown />
         </div>
         {infoItems.map((item, index) => (
@@ -128,15 +129,13 @@ type InfoItemProps = {
 }
 
 const InfoItem: React.FC<InfoItemProps> = ({ label }) => (
-  <div className="flex items-center gap-2">
-    <div className="my-auto grow text-sm font-medium leading-6 text-neutral-400">
+  <div className="flex w-1/5 items-center justify-center gap-5 ">
+    <div className="my-auto text-sm font-medium leading-6 text-neutral-400">
       {label}
     </div>
-
-    <TbArrowsUpDown />
-    <CurrencyImage
-      src="/filter.png"
-      className={` aspect-[0.7] h-4 w-4 shrink-0`}
-    />
+    <div className="flex">
+      <TbArrowsUpDown style={{ color: '#a3a3a3' }} />
+      <FiFilter style={{ color: '#a3a3a3' }} />
+    </div>
   </div>
 )

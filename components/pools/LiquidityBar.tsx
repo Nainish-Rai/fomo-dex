@@ -29,7 +29,7 @@ interface PriceProps {
 }
 
 const Price: React.FC<PriceProps> = ({ price }) => (
-  <div className="flex-auto">{price}</div>
+  <div className="flex w-1/5 items-center justify-center text-sm">{price}</div>
 )
 
 // const prices = ['$100,000,000', '$100,000,000', '$100,000,000']
@@ -39,45 +39,45 @@ function LiquidityBar({ Prices }: Props) {
   return (
     <section
       onClick={() => setActive(!active)}
-      className="mt-6 flex w-full cursor-pointer   items-center justify-between gap-5 rounded-xl bg-[#260F41]/50 bg-opacity-50 px-4 py-3 text-white transition-all duration-200 hover:bg-purple-950 lg:max-w-full lg:flex-wrap lg:px-12 "
+      className="mt-2 flex w-full cursor-pointer   items-center justify-center  gap-5 rounded-xl bg-[#260F41]/50 bg-opacity-50 px-4 py-3 text-white transition-all duration-200 hover:bg-purple-950 lg:max-w-full lg:flex-wrap lg:px-4 "
     >
-      {active ? (
-        <div className="flex w-full items-center">
-          <div className="flex flex-auto flex-col gap-2 font-medium text-textsecondary">
-            Your Liquidity
-            <span className="font-semibold text-white">$100,000,000 </span>
-            0LP
+      <div className="m-0 flex w-full justify-center p-0">
+        {active ? (
+          <div className="flex w-full items-center">
+            <div className="flex w-1/5 flex-auto  flex-col items-center justify-center gap-2 text-left text-sm font-medium text-textsecondary">
+              Your Liquidity
+              <span className="font-semibold text-white">$100,000,000 </span>
+              0LP
+            </div>
+            <div className="flex w-1/5 flex-auto flex-col  items-center justify-center gap-2 text-left text-sm font-medium text-textsecondary">
+              Assets Pooled
+              <span className="font-semibold text-white">0.8 XYZ </span>
+              <span className="font-semibold text-white">0 LP </span>
+            </div>
+            <div className="flex w-1/5 flex-auto  flex-col items-center justify-center gap-2 text-left text-sm font-medium text-textsecondary">
+              Your Share
+              <span className="font-semibold text-white">0%</span>
+              {/* <span className="font-semibold text-white">0%</span> */}
+            </div>
+            <div className="w-1/5 items-center justify-center  px-8 text-left text-sm">
+              <PrimaryBtn className="w-full">Add Liquidity</PrimaryBtn>
+            </div>
+            <div className="flex w-1/5 items-center justify-center  gap-2 text-left text-sm">
+              <Icon
+                src="/swapicon.png"
+                alt="Icon 0"
+                className="my-auto h-8 w-8    fill-white"
+              />
+              <Icon
+                src="/minus.png"
+                alt="Icon 1"
+                className="my-auto h-8 w-8    fill-white"
+              />
+            </div>
           </div>
-          <div className="flex flex-auto flex-col gap-2 font-medium text-textsecondary">
-            Assets Pooled
-            <span className="font-semibold text-white">0.8 XYZ </span>
-            <span className="font-semibold text-white">0 LP </span>
-          </div>
-          <div className="flex flex-auto flex-col gap-2 font-medium text-textsecondary">
-            Your Share
-            <span className="font-semibold text-white">0%</span>
-            {/* <span className="font-semibold text-white">0%</span> */}
-          </div>
-          <div className="px-8">
-            <PrimaryBtn className="w-full">Add Liquidity</PrimaryBtn>
-          </div>
-          <div className="flex gap-2">
-            <Icon
-              src="/swapicon.png"
-              alt="Icon 0"
-              className="my-auto h-8 w-8    fill-white"
-            />
-            <Icon
-              src="/minus.png"
-              alt="Icon 1"
-              className="my-auto h-8 w-8    fill-white"
-            />
-          </div>
-        </div>
-      ) : (
-        <>
-          <div className="flex flex-auto  justify-start">
-            <div className="flex grow items-center  gap-5">
+        ) : (
+          <>
+            <div className="flex w-1/5 items-center  justify-center gap-5">
               <Icon
                 src="/star.png"
                 alt="Icon 0"
@@ -97,20 +97,21 @@ function LiquidityBar({ Prices }: Props) {
                   />
                 </div>
                 <div className="mt-3 flex items-center gap-1.5 whitespace-nowrap text-base font-medium leading-6 text-white">
-                  <div className="grow">MENS-SOL</div>
+                  <div className="grow text-sm">MENS-SOL</div>
                   <IoMdInformationCircleOutline />
                 </div>
               </div>
             </div>
-          </div>
 
-          {Prices.map((price, index) => (
-            <Price key={index} price={price} />
-          ))}
-          <div className="my-auto">20%</div>
-          <FaAngleDown />
-        </>
-      )}
+            {Prices.map((price, index) => (
+              <Price key={index} price={price} />
+            ))}
+            <div className="flex w-1/5 items-center justify-center gap-8 text-sm">
+              20% <FaAngleDown />
+            </div>
+          </>
+        )}
+      </div>
     </section>
   )
 }
