@@ -41,16 +41,16 @@ function PoolContainer({}: Props) {
             <FaAngleDown />
           </div>
           {/* Seach BTN */}
-          <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-4 py-2.5 pr-14 text-neutral-400">
+          <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-4 py-1.5 pr-14 text-neutral-400">
             <Image
               loading="lazy"
               src="/search.png"
               alt="search"
-              className="aspect-square w-5 shrink-0  "
+              className="aspect-square w-4 shrink-0  "
               width={22}
               height={22}
             />
-            <span className="my-auto flex-auto">Search</span>
+            <span className="my-auto flex-auto text-sm">Search</span>
           </button>
         </div>
       </div>
@@ -65,7 +65,13 @@ function PoolContainer({}: Props) {
         ))}
       </section>
       {/*  */}
-      <div className="hide-scrollbar flex h-[80%] scroll-my-8 flex-col overflow-scroll overflow-x-hidden">
+      <div className="hide-scrollbar flex h-full scroll-my-8  flex-col overflow-scroll overflow-x-hidden lg:h-[48rem]">
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
         <LiquidityBar
           Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
         />
