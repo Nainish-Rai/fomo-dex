@@ -48,7 +48,7 @@ function MobileLiquidityBar({ Prices }: Props) {
   return (
     <section
       onClick={() => setActive(!active)}
-      className="mt-2 flex w-full cursor-pointer flex-col items-center justify-center   gap-5 overflow-hidden  rounded-xl bg-[#260F41]/50  bg-opacity-50 pt-3 text-white transition-all duration-200 hover:bg-purple-950 lg:hidden lg:max-w-full lg:flex-row lg:flex-wrap lg:px-4 lg:py-3 "
+      className="mt-2 flex h-fit w-full cursor-pointer flex-col items-center justify-center   gap-5 overflow-hidden  rounded-xl bg-[#260F41]/50  bg-opacity-50 pt-3 text-white transition-all duration-200 hover:bg-purple-950 lg:hidden lg:max-w-full lg:flex-row lg:flex-wrap lg:px-4 lg:py-3 "
     >
       <div className="m-0 flex w-full flex-wrap justify-center p-0 px-4">
         {active ? (
