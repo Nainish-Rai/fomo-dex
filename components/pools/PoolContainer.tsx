@@ -26,22 +26,25 @@ function PoolContainer({}: Props) {
   return (
     <div className="  mb-16 max-h-[900px] w-full   overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
       {' '}
-      <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
+      <div className="flex w-full flex-col items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap lg:flex-row ">
         <div className="flex flex-col">
-          <h2 className="text-base leading-6 text-white">Liquidity Pools</h2>
+          <div className="flex lg:block">
+            <h2 className="text-base leading-6 text-white">Liquidity Pools</h2>{' '}
+          </div>
           <p className="mt-3.5 text-sm leading-6 text-neutral-400">
             Earn yield on trading fees by providing liquidity
           </p>
         </div>
-        <div className="mt-3.5 flex justify-between gap-5 text-base">
-          <div className="my-auto flex gap-4 leading-5 text-white">
+
+        <div className="mt-3.5 flex w-full justify-between gap-5 text-base lg:w-fit">
+          <div className="my-auto hidden gap-4 leading-5 text-white lg:flex">
             <span className="flex-auto">
               Time Basis: <span className="text-white">24HR</span>
             </span>
             <FaAngleDown />
           </div>
           {/* Seach BTN */}
-          <button className="flex items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-4 py-1.5 pr-14 text-neutral-400">
+          <button className="flex w-full items-center gap-3 whitespace-nowrap rounded-3xl border border-solid border-stone-500 bg-neutral-900 px-4 py-1.5 pr-14 text-neutral-400 lg:w-fit">
             <Image
               loading="lazy"
               src="/search.png"
@@ -55,7 +58,7 @@ function PoolContainer({}: Props) {
         </div>
       </div>
       {/*  */}
-      <section className="mt-6 flex w-full items-center justify-between  rounded-xl bg-zinc-800 bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
+      <section className="mt-6 hidden w-full items-center justify-between rounded-xl  bg-zinc-800 bg-opacity-50 px-20 py-6 lg:flex lg:max-w-full lg:flex-wrap lg:px-5">
         <div className=" flex w-1/5 items-center justify-center gap-5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
           <div className="my-auto ">Pool</div>
           <TbArrowsUpDown />
@@ -65,7 +68,7 @@ function PoolContainer({}: Props) {
         ))}
       </section>
       {/*  */}
-      <div className="hide-scrollbar flex h-full scroll-my-8  flex-col overflow-scroll overflow-x-hidden lg:h-[48rem]">
+      <div className="hide-scrollbar mt-8 flex h-full scroll-my-8 flex-col  overflow-scroll overflow-x-hidden lg:mt-0 lg:h-[48rem]">
         <LiquidityBar
           Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
         />

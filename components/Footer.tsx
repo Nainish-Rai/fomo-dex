@@ -9,10 +9,10 @@ interface FooterLinkProps {
 
 const FooterLink: React.FC<FooterLinkProps> = ({ title, links }) => {
   return (
-    <div className="flex flex-col">
+    <div className=" flex flex-col">
       <div className="text-left text-base font-medium text-white">{title}</div>
       {links.map((link, index) => (
-        <div key={index} className={`mt-${index === 0 ? 10 : 6}`}>
+        <div key={index} className={`lg:mt-${index === 0 ? 10 : 6} mt-4`}>
           <a className="text-sm duration-200 hover:text-purple-500" href={link}>
             {link}
           </a>
@@ -45,22 +45,26 @@ const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className=" z-10 mt-40 flex flex-col items-center self-stretch bg-neutral-950 bg-opacity-60 px-16 pb-8 pt-20 leading-[150%]  md:flex-row">
+    <footer className=" z-10 flex flex-col items-center self-stretch bg-neutral-950 bg-opacity-60 px-10 pb-8 pt-20 leading-[150%] md:flex-row lg:mt-40  lg:px-16">
       <div className="mx-auto mt-1.5 flex w-full max-w-7xl flex-col max-md:max-w-full">
-        <div className="flex justify-between gap-5 text-base text-white text-opacity-70 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
-          <div className="mt-3.5 flex flex-col self-start text-lg leading-8">
+        <div className="flex justify-between gap-5 text-base text-white text-opacity-70 max-md:max-w-full max-md:flex-wrap ">
+          <div className="mb-16 mt-3.5 flex w-full flex-col items-center self-start text-lg leading-8 lg:mb-0 lg:w-fit lg:items-start">
             <Image
               loading="lazy"
               src="/brandlogo.svg"
               alt="Company logo"
               width={100}
               height={42}
-              className="aspect-[4.17] w-[177px] max-w-full"
+              className="aspect-[4.17] w-[120px] max-w-full lg:w-[177px]"
             />
-            <div className="mt-16 text-base leading-6 max-md:mt-10">
+            <div className="mt-4 text-center text-xs leading-6  lg:mt-16 lg:text-left lg:text-base">
               A new way to make the payments easy, reliable <br /> and secure.
+            </div>{' '}
+            <div className="lg:hidden">
+              <FooterSocial />
             </div>
           </div>
+
           {footerLinks.map((link, index) => (
             <FooterLink key={index} title={link.title} links={link.links} />
           ))}
