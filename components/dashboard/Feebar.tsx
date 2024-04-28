@@ -39,7 +39,7 @@ function FeeBar({ Prices }: Props) {
   return (
     <section
       onClick={() => setActive(!active)}
-      className="mt-2 flex w-full cursor-pointer   items-center justify-center  gap-5 rounded-xl bg-[#260F41]/50 bg-opacity-50 px-4 py-3 text-white transition-all duration-200 hover:bg-purple-950 lg:max-w-full lg:flex-wrap lg:px-4 "
+      className="mt-2 hidden w-full cursor-pointer items-center   justify-center gap-5  rounded-xl bg-[#260F41]/50 bg-opacity-50 px-4 py-3 text-white transition-all duration-200 hover:bg-purple-950 lg:flex lg:max-w-full lg:flex-wrap lg:px-4 "
     >
       <div className="m-0 flex w-full justify-center p-0">
         <div className="flex w-1/6 items-center  justify-center gap-5">

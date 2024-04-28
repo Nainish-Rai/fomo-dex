@@ -32,10 +32,13 @@ interface PriceProps {
 const Price: React.FC<PriceProps> = ({ price, index }) => (
   <div className="my-3 flex w-1/2 flex-col gap-2">
     <div>
-      {index === 0 && <div className="text-neutral-500">Volume 24H</div>}
-      {index === 1 && <div className="text-neutral-500">Fees 24H</div>}
-      {index === 2 && <div className="text-neutral-500"> Liquidity</div>}{' '}
-      {index === 3 && <div className="text-neutral-500"> APR 24H</div>}
+      {index === 0 && <div className="text-neutral-500">User ID</div>}
+      {index === 1 && <div className="text-neutral-500">Amount Traded</div>}
+      {index === 2 && (
+        <div className="text-neutral-500">Commision Recieved</div>
+      )}{' '}
+      {index === 3 && <div className="text-neutral-500"> Transaction</div>}
+      {/* {index === 4 && <div className="text-neutral-500"> Time Stamp</div>} */}
     </div>
     <div className="flex w-1/2 items-center justify-start text-sm">{price}</div>
   </div>
@@ -43,7 +46,7 @@ const Price: React.FC<PriceProps> = ({ price, index }) => (
 
 // const prices = ['$100,000,000', '$100,000,000', '$100,000,000']
 
-function MobileLiquidityBar({ Prices }: Props) {
+function MobileFeeBar({ Prices }: Props) {
   const [active, setActive] = useState(false)
   return (
     <section
@@ -53,9 +56,6 @@ function MobileLiquidityBar({ Prices }: Props) {
       <div className="m-0 flex w-full flex-wrap justify-center p-0 px-4">
         {active ? (
           <div className="flex w-full flex-wrap items-center px-4 pb-4">
-            <div className="mb-4 flex w-full justify-center text-sm underline">
-              Hide Details
-            </div>
             <div className="my-2 flex w-1/2  flex-auto flex-col items-start justify-center gap-2 text-left text-sm font-medium text-textsecondary">
               Your Liquidity
               <span className="font-semibold text-white">$100,000,000 </span>
@@ -116,22 +116,22 @@ function MobileLiquidityBar({ Prices }: Props) {
             {Prices.map((price, index) => (
               <Price key={index} index={index} price={price} />
             ))}
-            <div className="my-4 flex w-1/2 flex-col gap-2">
-              <div className="text-neutral-500"> APR 24H</div>{' '}
+            <div className="my-4 flex w-full flex-col gap-2">
+              <div className="text-neutral-500"> Timestamp</div>{' '}
               <div className="flex w-1/2 items-center justify-start gap-8 text-sm">
-                20% <FaAngleDown />
+                HH:MM:SS <FaAngleDown />
               </div>
             </div>
           </>
         )}
       </div>
-      {!active && (
+      {/* {!active && (
         <div className="px-auto flex w-full justify-center bg-[#402065]/50 p-2  text-sm underline">
           View Details
         </div>
-      )}
+      )} */}
     </section>
   )
 }
 
-export default MobileLiquidityBar
+export default MobileFeeBar
