@@ -7,7 +7,7 @@ import InfoCard from './InfoCard'
 
 function ExchangeContainer() {
   return (
-    <div className="flex w-full max-w-lg flex-col rounded-3xl border border-solid border-border bg-cardbg p-8">
+    <div className=" flex w-full flex-col rounded-3xl border border-solid border-border bg-cardbg py-4 md:max-w-lg lg:p-8">
       {/* From Card */}
       <FromCard />
       {/* FROM CARD */}
@@ -18,11 +18,13 @@ function ExchangeContainer() {
       {/* TO CARD */}
       <ToCard />
       {/* TO CARD */}
-      <InfoCard />
+      <div className="px-4 lg:px-0">
+        <InfoCard />
 
-      <PrimaryBtn className="mt-6 w-full py-0">
-        <div className=""> Connect Wallet</div>
-      </PrimaryBtn>
+        <PrimaryBtn className="mt-6 w-full py-0">
+          <div className=""> Connect Wallet</div>
+        </PrimaryBtn>
+      </div>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import PrimaryBtn from '../PrimaryBtn'
 import SecondaryBtn from '../SecondaryBtn'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -17,7 +18,9 @@ function Hero({}: Props) {
         Light-speed swaps. Next-level liquidity. Friction-less yield.
       </div>
       <div className="mt-12 flex flex-col justify-between gap-5 text-base font-medium capitalize leading-6 max-md:mt-10 lg:flex-row">
-        <PrimaryBtn className="">Launch App</PrimaryBtn>
+        <Link href="/exchange">
+          <PrimaryBtn className="">Launch App</PrimaryBtn>
+        </Link>
         <SecondaryBtn>Read Docs</SecondaryBtn>
       </div>
     </>

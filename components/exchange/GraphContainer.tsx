@@ -14,7 +14,7 @@ const TokenCard: React.FC<TokenCardProps> = ({
   isPositiveChange,
   chartImageSrc,
 }) => (
-  <div className="ml-16 flex w-full justify-between gap-5">
+  <div className="ml-8 flex w-full justify-between gap-5 md:ml-16">
     <div className="flex flex-col">
       <div className="ml-5 self-start text-sm font-medium leading-4 text-neutral-400 md:ml-2.5">
         Price
@@ -77,7 +77,7 @@ const tokenData = [
 
 export default function GraphContainer() {
   return (
-    <div className="mt-6 flex w-full max-w-lg items-start gap-5 whitespace-nowrap rounded-3xl border border-solid border-border bg-cardbg px-12 py-9 md:flex-wrap md:px-8">
+    <div className="mt-6 flex w-full max-w-lg items-start gap-5 whitespace-nowrap rounded-3xl border border-solid border-border bg-cardbg px-6 py-9 md:flex-wrap md:px-8 lg:px-12">
       <div className="flex w-full items-center">
         <div className="my-auto flex w-full shrink-0 grow basis-0 flex-col">
           {tokenData.map((token) => (

@@ -4,7 +4,7 @@ import GradientDiv from '../GradientDiv'
 import { FaAngleDown } from 'react-icons/fa6'
 export default function FromCard() {
   return (
-    <div className="flex  flex-col rounded-xl bg-[#140822] bg-opacity-50 px-8 py-6">
+    <div className="mt-2 flex flex-col rounded-xl bg-[#140822] bg-opacity-50 px-6 py-6 lg:mt-0 lg:px-8">
       <div className="flex w-full justify-between gap-5 text-sm leading-4">
         <div className="text-white">From</div>
         <div className=" font-medium text-neutral-400">
