@@ -40,13 +40,13 @@ const partnerItems = [
 function Potential() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="mt-16 text-center text-5xl font-bold  text-white md:mt-44 lg:text-5xl lg:leading-[100px]">
+      <div className="mt-16 text-center text-3xl font-bold  text-white md:mt-44 lg:text-5xl lg:leading-[100px]">
         <span className="font-extrabold">
           Unlock the Full Potential of Defi with
         </span>
         <span className="font-extrabold text-accent"> FOMO</span>
       </div>{' '}
-      <div className="mt-6 text-center text-xl leading-8 text-white max-md:mt-10 max-md:max-w-full">
+      <div className="mt-6 text-center text-sm text-white max-md:mt-10 max-md:max-w-full lg:text-xl lg:leading-8">
         Experience the power of community ownership, global governance, and
         explore infinite use cases with the FOMO ecosystem
       </div>
