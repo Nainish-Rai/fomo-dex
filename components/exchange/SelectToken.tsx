@@ -19,7 +19,7 @@ export function SelectToken({ children }: { children: React.ReactNode }) {
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
       <AlertDialogContent className=" rounded-3xl  p-0 ">
-        <div className=" boxshadow h-full w-full rounded-3xl border border-[#ABC4FF80]  bg-gradient-to-r from-[#18134D] to-[#1B1659E5] p-8">
+        <div className=" boxshadow h-full w-full rounded-3xl border border-[#ABC4FF80]  bg-gradient-to-r from-[#18134D] to-[#1B1659E5] p-6 lg:p-8">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-semibold text-white">Select a Token</h3>
             <AlertDialogCancel className="rounded-full  border-none bg-transparent  bg-gradient-to-r from-[#18134D] to-[#1B1659E5] ">
@@ -79,7 +79,7 @@ export function SelectToken({ children }: { children: React.ReactNode }) {
               <p>Balance/Address</p>
             </div>
             <div className="flex flex-col gap-2">
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
+              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 hover:bg-[#1C0039]/50 lg:px-4">
                 <div className="flex items-center gap-2">
                   <Image
                     src={'/solana.png'}
@@ -107,7 +107,7 @@ export function SelectToken({ children }: { children: React.ReactNode }) {
                   />
                 </div>
               </div>
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
+              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 hover:bg-[#1C0039]/50 lg:px-4">
                 <div className="flex items-center gap-2">
                   <Image
                     src={'/solana.png'}
@@ -135,7 +135,7 @@ export function SelectToken({ children }: { children: React.ReactNode }) {
                   />
                 </div>
               </div>
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
+              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 hover:bg-[#1C0039]/50 lg:px-4">
                 <div className="flex items-center gap-2">
                   <Image
                     src={'/solana.png'}
@@ -163,7 +163,7 @@ export function SelectToken({ children }: { children: React.ReactNode }) {
                   />
                 </div>
               </div>
-              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 px-4 hover:bg-[#1C0039]/50">
+              <div className=" mt-2 flex cursor-pointer flex-row items-center justify-between rounded-md p-2 hover:bg-[#1C0039]/50 lg:px-4">
                 <div className="flex items-center gap-2">
                   <Image
                     src={'/solana.png'}

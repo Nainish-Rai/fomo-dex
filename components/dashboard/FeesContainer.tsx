@@ -124,12 +124,12 @@ type InfoItemProps = {
 
 const InfoItem: React.FC<InfoItemProps> = ({ label }) => (
   <div className="flex w-1/6 items-center justify-center gap-2">
-    <div className="my-auto  text-sm font-medium leading-6 text-neutral-400">
+    <div className="my-auto  text-xs font-medium leading-6 text-neutral-400">
       {label}
     </div>
     <div className="flex items-center">
-      <TbArrowsUpDown style={{ color: 'white' }} />
-      <FiFilter style={{ color: 'white' }} />
+      <TbArrowsUpDown style={{ color: '#a3a3a3' }} />
+      <FiFilter style={{ color: '#a3a3a3' }} />
     </div>
   </div>
 )

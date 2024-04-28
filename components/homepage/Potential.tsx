@@ -50,7 +50,7 @@ function Potential() {
         Experience the power of community ownership, global governance, and
         explore infinite use cases with the FOMO ecosystem
       </div>
-      <div className="mt-12 flex justify-between gap-5 text-base font-medium capitalize leading-6 max-md:mt-10">
+      <div className="mt-12 flex flex-col justify-between gap-5 text-base font-medium capitalize leading-6 max-md:mt-10 lg:flex-row">
         <PrimaryBtn className="">
           <div className="px-2">Buy FOMO</div>
         </PrimaryBtn>
@@ -79,7 +79,7 @@ function Potential() {
             width={240}
             height={224}
             alt=""
-            className="mt-12 h-[12rem] w-full md:hidden"
+            className="mt-12 h-[13rem] w-full md:hidden"
           />
         </div>
         <div className="flex flex-col text-white">

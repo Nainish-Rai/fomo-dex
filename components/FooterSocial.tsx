@@ -7,7 +7,10 @@ type Props = {}
 
 function FooterSocial({}: Props) {
   return (
-    <div className="flex gap-8">
+    <div
+      className="mt-4 flex gap-4 lg:mt-0
+    lg:gap-8"
+    >
       <FaInstagram className="text-xl text-white" />
       <FaFacebook className="text-xl text-white" />
       <FaTwitter className="text-xl text-white" />
