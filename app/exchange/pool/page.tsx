@@ -11,7 +11,7 @@ function Pool({}: Props) {
           <h3 className="text-base font-semibold text-white lg:text-xl">
             Pools
           </h3>
-          <div className="flex gap-2  text-xs font-medium text-textsecondary lg:gap-8">
+          <div className="flex gap-2  text-xs font-medium text-textsecondary lg:gap-8 lg:text-sm">
             <div>
               TVL: <span className="text-white">100,000,000</span>
             </div>
