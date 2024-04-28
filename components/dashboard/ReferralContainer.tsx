@@ -9,7 +9,7 @@ import { FaAngleDown } from 'react-icons/fa6'
 
 function ReferralContainer() {
   return (
-    <div className="flex h-fit w-full max-w-[490px] flex-col rounded-3xl border border-solid border-border bg-cardbg p-8 ">
+    <div className="flex h-fit w-full max-w-[490px] flex-col rounded-3xl border border-solid border-border bg-cardbg p-4 pb-6 lg:p-8 lg:pb-8 ">
       {/* From Card */}
       <div className="flex flex-col items-center rounded-xl bg-secondarybg p-4">
         <div className="text-white">From</div>
@@ -33,7 +33,7 @@ function ReferralContainer() {
           alt="down arrow"
           width={48}
           height={48}
-          className="w-10"
+          className="w-7 lg:w-10"
         />
       </div>
 
@@ -59,7 +59,7 @@ function ReferralContainer() {
         <div className="">Generate Referral </div>
       </PrimaryBtn>
       <div className="mt-10 flex max-w-[430px] flex-col rounded-md border border-solid border-black border-opacity-30 bg-secondarybg px-2.5 py-6 text-center sm:max-w-full md:max-w-[430px] lg:max-w-[430px]">
-        <div className="self-center  leading-8 text-purple-500">
+        <div className="self-center text-xs leading-8  text-purple-500 lg:text-sm">
           https://single-sided.the-referral-factory.com
         </div>
         <PrimaryBtn className="mt-3 w-full py-2">Copy Link</PrimaryBtn>
@@ -68,7 +68,7 @@ function ReferralContainer() {
         <h3 className="text-xl font-semibold text-white">
           Share Your Unique Referral Link
         </h3>
-        <div className="mt-4 flex cursor-pointer gap-2">
+        <div className="mt-4 flex cursor-pointer flex-wrap justify-center gap-6 lg:gap-2 ">
           <Image
             src="/facebook_black.svg"
             alt="referral"
@@ -140,13 +140,13 @@ function ReferralContainer() {
             height={300}
             className="w-8"
           />
-          <Image
+          {/* <Image
             src="/messsage_white.svg"
             alt="referral"
             width={300}
             height={300}
-            className="w-8"
-          />
+            className="hidden w-8 lg:block"
+          /> */}
         </div>
       </div>
     </div>
