@@ -44,7 +44,7 @@ function Potential() {
         <span className="font-extrabold">
           Unlock the Full Potential of Defi with
         </span>
-        <span className="text-accent font-extrabold"> FOMO</span>
+        <span className="font-extrabold text-accent"> FOMO</span>
       </div>{' '}
       <div className="mt-6 text-center text-xl leading-8 text-white max-md:mt-10 max-md:max-w-full">
         Experience the power of community ownership, global governance, and
@@ -57,10 +57,10 @@ function Potential() {
         <SecondaryBtn>Learn More</SecondaryBtn>
       </div>
       {/* Ecosystem */}
-      <div className="mt-48 flex w-full max-w-6xl flex-col items-center justify-between lg:flex-row">
-        <div className="flex flex-col text-white">
-          <h2 className="text-2xl font-extrabold">Ecosystem</h2>
-          <div className=" flex flex-col items-start  text-lg  max-md:pl-5">
+      <div className="mt-48 flex w-full max-w-6xl flex-row items-center justify-between gap-4 lg:flex-row">
+        <div className="flex flex-col text-xs text-white">
+          <h2 className="text-lg font-extrabold lg:text-2xl">Ecosystem</h2>
+          <div className=" flex flex-col items-start  text-sm    md:text-lg">
             {ecosystemItems.map((title, index) => (
               <EcosystemItem key={index} title={title} />
             ))}
@@ -72,12 +72,21 @@ function Potential() {
             alt=""
             width={1430}
             height={800}
-            className="h-full w-full"
+            className="hidden h-full w-full md:block"
+          />
+          <Image
+            src="/potentialmobile.png"
+            width={240}
+            height={224}
+            alt=""
+            className="mt-12 h-[12rem] w-full md:hidden"
           />
         </div>
         <div className="flex flex-col text-white">
-          <h2 className="text-right text-2xl font-extrabold">Partners</h2>
-          <div className=" flex flex-col items-start pl-11 text-lg">
+          <h2 className="-ml-2 text-left text-lg font-extrabold lg:ml-0 lg:text-right lg:text-2xl">
+            Partners
+          </h2>
+          <div className=" flex flex-col items-end text-sm lg:items-start lg:pl-11 lg:text-lg">
             {partnerItems.map((item, index) => (
               <PartnerItem key={index} name={item} />
             ))}

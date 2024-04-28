@@ -5,7 +5,7 @@ import { SelectToken } from './SelectToken'
 import { FaAngleDown } from 'react-icons/fa6'
 export default function ToCard() {
   return (
-    <div className="fle2 mt-5 flex-col rounded-xl bg-[#140822] bg-opacity-50 px-8 py-6">
+    <div className="mt-5 flex flex-col rounded-xl bg-[#140822] bg-opacity-50 px-5 py-6 lg:px-8">
       <div className="flex w-full justify-between gap-5 text-sm leading-4">
         <div className="text-white">TO</div>
         <div className="font-medium text-neutral-400">
@@ -16,14 +16,14 @@ export default function ToCard() {
         <SelectToken>
           <div className=" flex cursor-pointer items-center gap-2 text-base font-medium leading-6 text-white">
             <Image src="/solana.png" alt="Solana" width={24} height={24} />
-            <div>FOMO</div>
+            <div className="text-sm lg:text-base">FOMO</div>
             <div className="flex h-full items-center">
               <FaAngleDown />
             </div>
           </div>
         </SelectToken>
         <div className="flex items-start  gap-3 px-0.5 text-sm font-medium capitalize leading-5 text-white">
-          <div className="h-8 w-px shrink-0 self-stretch border-r border-solid border-indigo-300 border-opacity-50" />
+          <div className="ml-2 h-8 w-px shrink-0 self-stretch border-r border-solid border-indigo-300 border-opacity-50" />
           <GradientDiv className="items-start justify-center  rounded-[40px] px-1 py-0  text-xs">
             <div className="m-1 mx-2">Max</div>
           </GradientDiv>

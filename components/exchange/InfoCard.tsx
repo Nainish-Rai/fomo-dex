@@ -7,7 +7,7 @@ type Props = {}
 
 function InfoCard({}: Props) {
   return (
-    <div className="mt-5 rounded-3xl border border-solid border-stone-500 px-7 py-6 text-white">
+    <div className=" mt-5 rounded-3xl border border-solid border-stone-500 px-7 py-6 text-white ">
       <div className="flex gap-5">
         <div className="flex w-full flex-col">
           <div className="flex w-full grow flex-col text-sm leading-4 text-white">
