@@ -8,7 +8,7 @@ const FigureItem = ({
   hidden?: boolean
 }) => {
   return (
-    <div className=" mt-0 flex w-full flex-col items-center justify-center gap-8 px-4 lg:mt-12 lg:w-1/3 lg:flex-row ">
+    <div className=" my-6 mt-0 flex w-full flex-col items-center justify-center gap-8 px-4 lg:my-0 lg:mt-12 lg:w-1/3 lg:flex-row ">
       <div className="my-2 flex  w-full flex-col items-center gap-2 self-stretch px-5 leading-[130%]  lg:my-5 lg:flex-row">
         <div className="grow text-3xl font-extrabold text-white  xl:text-4xl 2xl:text-5xl">
           {stat}
