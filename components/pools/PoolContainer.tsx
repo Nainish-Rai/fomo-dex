@@ -5,6 +5,7 @@ import LiquidityBar from './LiquidityBar'
 import { FaAngleDown, FaFilter } from 'react-icons/fa6'
 import { FiFilter } from 'react-icons/fi'
 import { TbArrowsUpDown } from 'react-icons/tb'
+import MobileLiquidityBar from './MobileLiquidityBar'
 
 type Props = {}
 
@@ -68,7 +69,37 @@ function PoolContainer({}: Props) {
         ))}
       </section>
       {/*  */}
-      <div className="hide-scrollbar mt-8 flex h-full scroll-my-8 flex-col  overflow-scroll overflow-x-hidden lg:mt-0 lg:h-[48rem]">
+      <div className="hide-scrollbar mt-8 flex h-fit scroll-my-8  flex-col   overflow-scroll overflow-x-hidden lg:mt-0 lg:h-[48rem]">
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <MobileLiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
+        <LiquidityBar
+          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+        />
         <LiquidityBar
           Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
         />

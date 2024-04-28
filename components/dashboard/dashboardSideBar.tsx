@@ -42,7 +42,7 @@ function DashboardSideBar() {
     },
   ]
   return (
-    <div className=" mr-6 flex w-full max-w-60 flex-col items-center whitespace-nowrap text-base">
+    <div className=" mr-6 hidden w-full max-w-60 flex-col items-center whitespace-nowrap text-base lg:flex">
       <div className=" mt-12 flex w-full max-w-full flex-col px-4  font-medium text-neutral-400">
         {SideBarItemInfo.map((item, index) => (
           <SideBarItem key={index} title={item.title} icon={item.icon} />
