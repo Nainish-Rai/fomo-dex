@@ -15,7 +15,7 @@ export default function FromCard() {
         <SelectToken>
           <div className=" flex cursor-pointer items-center gap-2 text-base font-medium leading-6 text-white">
             <Image src="/solana.png" alt="Solana" width={24} height={24} />
-            <div>SOL</div>
+            <div className="text-sm lg:text-base">SOL</div>
             <div className="flex h-full items-center">
               <FaAngleDown />
             </div>

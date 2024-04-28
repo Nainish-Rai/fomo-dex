@@ -69,67 +69,69 @@ function PoolContainer({}: Props) {
         ))}
       </section>
       {/*  */}
-      <div className="hide-scrollbar mt-8 flex  scroll-my-8  flex-col   overflow-scroll overflow-x-hidden lg:mt-0 lg:h-[48rem]">
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <MobileLiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <LiquidityBar
-          Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
-        />
+      <div className="hide-scrollbar mt-8 flex  h-[48rem]  scroll-my-8 flex-col   overflow-scroll overflow-x-hidden  lg:mt-0 lg:h-[48rem]">
+        <div className="pb-48">
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileLiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <LiquidityBar
+            Prices={['$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+        </div>
       </div>
     </div>
   )

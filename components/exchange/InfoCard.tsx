@@ -10,20 +10,20 @@ function InfoCard({}: Props) {
     <div className=" mt-5 rounded-3xl border border-solid border-stone-500 px-7 py-6 text-white ">
       <div className="flex gap-5">
         <div className="flex w-full flex-col">
-          <div className="flex w-full grow flex-col text-sm leading-4 text-white">
+          <div className="flex w-full grow flex-col text-xs leading-4  text-white lg:text-sm">
             <div className="flex w-full justify-between">
               <div className="flex items-center gap-2">
                 Swapping Through <IoMdInformationCircleOutline />
               </div>
-              <div className="text-base font-semibold leading-4 text-white">
+              <div className="text-sm font-semibold leading-4 text-white lg:text-base">
                 Raydiuum Pool
               </div>
             </div>
-            <div className="mt-3 flex w-full items-center justify-between">
+            <div className="mt-3 flex w-full items-center justify-between text-sm lg:text-base">
               <div className=" flex items-center gap-2">
                 Minimum Received <IoMdInformationCircleOutline />
               </div>
-              <div className="text-base font-semibold leading-4 text-white">
+              <div className="text-sm font-semibold leading-4 text-white lg:text-base">
                 100 RAY
               </div>
             </div>
@@ -31,7 +31,7 @@ function InfoCard({}: Props) {
               <div className=" flex items-center gap-2">
                 Price Impact <IoMdInformationCircleOutline />
               </div>
-              <div className="text-base font-semibold leading-4 text-white">
+              <div className="text-sm font-semibold leading-4 text-white lg:text-base">
                 {'<'} 1%
               </div>
             </div>

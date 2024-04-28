@@ -7,6 +7,7 @@ import { FaAngleDown } from 'react-icons/fa6'
 
 import { TbArrowsUpDown } from 'react-icons/tb'
 import { FiFilter } from 'react-icons/fi'
+import MobileFeeBar from './MobileFeeBar'
 
 type Props = {}
 
@@ -31,7 +32,7 @@ function FeeContainer({}: Props) {
   return (
     <div className=" mb-16  h-full   min-h-[600px] w-full overflow-hidden rounded-2xl border border-border bg-cardbg px-4 pt-12 lg:px-8">
       {' '}
-      <div className="flex w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap ">
+      <div className="hidden w-full items-start justify-between gap-5 font-medium sm:max-w-full sm:flex-wrap lg:flex ">
         <div className="flex flex-col">
           <h2 className="text-base leading-6 text-white">Fee Earned</h2>
           <p className="mt-3.5 text-sm leading-6 text-neutral-400">
@@ -43,7 +44,7 @@ function FeeContainer({}: Props) {
         </div>
       </div>
       {/*  */}
-      <section className="mt-6 flex w-full items-center justify-between  rounded-xl bg-[#23242F]/50 bg-opacity-50 px-20 py-6 lg:max-w-full lg:flex-wrap lg:px-5">
+      <section className="mt-6 hidden w-full items-center justify-between rounded-xl  bg-[#23242F]/50 bg-opacity-50 px-20 py-6 lg:flex lg:max-w-full lg:flex-wrap lg:px-5">
         <div className="flex w-1/6 items-center justify-center gap-3.5 whitespace-nowrap text-sm font-medium leading-6 text-neutral-400">
           <div className="my-auto">Pool</div>
           <FaAngleDown />
@@ -53,37 +54,69 @@ function FeeContainer({}: Props) {
         ))}
       </section>
       {/*  */}
-      <div className="hide-scrollbar flex h-full scroll-my-8  flex-col overflow-scroll overflow-x-hidden lg:h-[48rem]">
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
-        <FeeBar
-          Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
-        />
+      <div className="hide-scrollbar flex h-[48rem] scroll-my-8  flex-col overflow-scroll overflow-x-hidden lg:h-[48rem]">
+        <div className="pb-48">
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <MobileFeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+          <FeeBar
+            Prices={['123456', '$100,000,000', '$100,000,000', '$100,000,000']}
+          />
+        </div>
       </div>
     </div>
   )
