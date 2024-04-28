@@ -57,7 +57,7 @@ function LiquidityBar({ Prices }: Props) {
             <div className="flex w-1/5 flex-auto  flex-col items-center justify-center gap-2 text-left text-sm font-medium text-textsecondary">
               Your Share
               <span className="font-semibold text-white">0%</span>
-              {/* <span className="font-semibold text-white">0%</span> */}
+              <span className="font-semibold text-transparent">0%</span>
             </div>
             <div className="w-1/5 items-center justify-center  px-8 text-left text-sm">
               <PrimaryBtn className="w-full">Add Liquidity</PrimaryBtn>
