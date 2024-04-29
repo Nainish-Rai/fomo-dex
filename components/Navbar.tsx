@@ -7,12 +7,13 @@ import { FaAngleDown } from 'react-icons/fa6'
 import { usePathname } from 'next/navigation'
 import ExchangeHamburger from './ExchangeHamburger'
 import DashBoardHamburger from './DashBoardHamburger'
+import HomeHamburger from './HomeHamburger'
 
 export default function Navbar() {
   const route = usePathname()
   const [openExchange, setOpenExchange] = React.useState(false)
   const [openDashboard, setOpenDashboard] = React.useState(false)
-
+  const [openMenu, setOpenMenu] = React.useState(false)
   // check if route contain /exchange
   const isExchangeRoute = route.includes('/exchange')
 
@@ -55,7 +56,8 @@ export default function Navbar() {
           className="m-2 md:hidden"
           onClick={() => (
             isExchangeRoute && setOpenExchange(!openExchange),
-            isDashboardRoute && setOpenDashboard(!openDashboard)
+            isDashboardRoute && setOpenDashboard(!openDashboard),
+            !isExchangeRoute && !isDashboardRoute && setOpenMenu(!openMenu)
           )}
         />
         {openExchange && (
@@ -64,6 +66,7 @@ export default function Navbar() {
         {openDashboard && (
           <DashBoardHamburger handleClick={() => setOpenDashboard(false)} />
         )}
+        {openMenu && <HomeHamburger handleClick={() => setOpenMenu(false)} />}
       </div>
     </nav>
   )
